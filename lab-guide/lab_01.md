@@ -1,6 +1,15 @@
-### Getting Started with Microsoft Fabric
 
-### exercise 1 : Create a Fabric workspace
+# Lab 01: Getting Started with Microsoft Fabric
+
+## Lab Scenario
+
+## Objectives
+  
+### Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+## Exercise 1 : Create a Fabric workspace
 
 #### Task 1.1: Assign Fabric Administrator Role
 
@@ -64,7 +73,14 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
    ![advanced-and-apply](./Images/ws/fabriccapacity.png)
 
-   ### excerise 2 : Create a Lakehouse and upload files.
+## Excerise 2 : Create a Lakehouse and upload files.
+   
+   In Microsoft Fabric, a lakehouse provides highly scalable file storage in a OneLake store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables 
+   and views based on the open source Delta Lake table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
+   Now that you have created a workspace in the previous step, it's time to switch to the Data engineering experience in the portal and create a data lakehouse into which you will 
+   ingest data.
+
+## Task 2.1 : Create a lakehouse.
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
