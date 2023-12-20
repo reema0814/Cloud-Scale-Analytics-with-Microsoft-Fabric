@@ -27,9 +27,9 @@
    
      ![05](./Images/gs/05.png)
      
-   > If you see the **Help us protect your account** dialog box, then select **Skip for now** option.
+   > If you see the pop-up click on **ask later**.
 
-      ![06](./Images/gs/06.png)
+      ![06](./Images/gs/asklater1.png)
   
 1. If you see the pop-up **Stay Signed in?**, click No
 

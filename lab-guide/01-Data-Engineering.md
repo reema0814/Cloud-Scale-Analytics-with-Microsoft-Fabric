@@ -23,13 +23,13 @@ Now that you have created a workspace in the previous step, it's time to switch 
    
 2. In the **Data engineering** home page, create a new **Lakehouse**.
 
-    - **Name:** Enter **Lakehouse**, and any extra characters to make the name unique.
+    - **Name:** Enter **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![02](./Images/01/Pg3-T1-S2.png)
+   ![02](./Images/01/lakehouse.png)
 
     After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-3. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
+4. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
 
    ![02](./Images/01/01.png)
 
@@ -47,7 +47,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. On the **Home** page for your lakehouse, select **New Data pipeline**.
 
-    ![03](./Images/01/Pg3-TCreatePipeline-S1.png)
+    ![03](./Images/01/datapipeline.png)
 
 2. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
    
@@ -93,7 +93,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
      ![07](./Images/01/07.png)
 
-11. Set the following data destination options, and then select **Next**:
+     ![07](./Images/01/connectdest02.png)
+
+12. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
@@ -101,7 +103,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
     ![08](./Images/01/08.png)
 
-12. Set the following file format options and then select **Next**:
+13. Set the following file format options and then select **Next**:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
@@ -110,19 +112,19 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
     ![09](./Images/01/09.png)
 
-13. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+14. On the **Copy summary** page, review the details of your copy operation and then select **Review + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
 
-14. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
+15. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
 
-15. In the menu bar on the left, select your lakehouse.
+16. In the menu bar on the left, select your lakehouse.
 
-16. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+17. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
     ![10](./Images/01/10.png)
 
@@ -148,6 +150,8 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
+   >**Note:** Wait untill the previous code completes execution
+   
     ```python
    from pyspark.sql.functions import *
 
@@ -287,11 +291,11 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - The **Item Sales Report** report.
 
 
----
+## Review
 
 In this exercise, you have created a lakehouse and imported data into it. You've seen how a lakehouse consists of files and tables stored in a OneLake data store. The managed tables can be queried using SQL, and are included in a default dataset to support data visualizations.
 
----
 
-Continue to page 4 ...
+
+## Proceed to next exercise
 

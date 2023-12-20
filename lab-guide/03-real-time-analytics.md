@@ -10,21 +10,26 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
-1. In the **Microsoft Fabric** experience portal, select the **Synapse Real-Time Analytics** experience image as shown here:
+1. In the **Microsoft Fabric** https://app.fabric.microsoft.com/ experience portal , select the **Synapse Real-Time Analytics** experience image as shown here:
+    
+     ![00](./Images/03/synpase.png)
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/fabric-experience-home.png)
+3. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database.
+   
+     ![00](./Images/03/kql.png)
 
-2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database.
+   >**Note:** Make the fabric workspace is selected before Creating KQL database
+   
+   - **Name:** Enter **KQL-Database-<inject key="DeploymentID" enableCopy="false"/>**
 
-   - **Name:** Enter **KQL-Database**, and any extra characters to make the name unique.
-
-    ![](./Images/03/PgS2.png)
-
-3. When the new database has been created, select the option to get data from **Local File**.
+    ![00](./Images/03/createkql.png)
+   
+   
+5. When the new database has been created, select the option to get data from **Local File**.
 
    ![01](./Images/03/01.png)
 
-4. Use the wizard to import the data into a new table by selecting the following options:
+6. Use the wizard to import the data into a new table by selecting the following options:
     - **Destination**:
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales**.
@@ -198,10 +203,9 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code stops the stream.
 
-
----
+## Review
 
 In this exercise, you have created a lakehouse, a KQL database to analyze the data uploaded into the lakehouse. You used KQL to query the data and create a query set, which was then used to create a Power BI report.
 
----
-Continue to page 6 ...
+
+## Proceed to next exercise

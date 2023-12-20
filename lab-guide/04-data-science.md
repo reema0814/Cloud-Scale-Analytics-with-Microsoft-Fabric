@@ -8,7 +8,7 @@ This lab will take approximately **45** minutes to complete.
 
 Using the same workspace, it's time to switch to the *Data science* experience in the portal.
 
-1. Navigate back to your lakehouse, and in the **... (1)** menu for the **Files** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
+1. Navigate back to your lakehouse, and in the menu for the **Files(1)** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
 
    ![](./Images/Pg6-S1.png)
 
@@ -64,13 +64,12 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
 1.  A new code cell containing the following code should be added to the notebook:
 
-   ```
-   python
-   import pandas as pd
-   # Load data into pandas DataFrame from "/lakehouse/default/" + "Files/churn.csv"
-   df = pd.read_csv("/lakehouse/default/" + "Files/churn.csv")
-   display(df)
-   ```
+     ```
+    import pandas as pd
+    # Load data into pandas DataFrame from "/lakehouse/default/" + "Files/churn.csv"
+    df = pd.read_csv("/lakehouse/default/" + "Files/churn.csv")
+    display(df)
+    ```
     
    > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
 
@@ -262,9 +261,8 @@ Now that you've finished training and evaluating the models, you can save the no
 
 3. On the notebook menu, select **Stop session** to end the Spark session.
 
----
+## Review
 
 In this exercise, you have created a notebook and trained a machine learning model. You used Scikit-Learn to train the model and MLflow to track it´s performance.
 
----
-Continue to page 7 ...
+## The lab has been successfully completed; if necessary, proceed to the next exercise, which is optional.
