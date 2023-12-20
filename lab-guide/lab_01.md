@@ -1,13 +1,9 @@
 
 # Lab 01: Getting Started with Microsoft Fabric
 
-## Lab Scenario
-
 ## Objectives
   
 ### Estimated timing: 60 minutes
-
-## Architecture Diagram
 
 ## Exercise 1 : Create a Fabric workspace
 
@@ -42,6 +38,8 @@
 
 #### Task 1.2: Create a workspace
 
+Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
+
 1. Copy the **microsoft fabric homepage link**, and open this link inside the VM in a new tab:
 
    ```
@@ -54,13 +52,12 @@
    ![Account-manager-start](./Images/ws/microsoftpage.png)
    
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
 
-1.  Now, select **Workspaces** and click on **+ New workspace**:
+3.  Now, select **Workspaces** and click on **+ New workspace**:
 
     ![New Workspace](./Images/ws/workspace.png)
 
-2. Fill out the **Create a workspace** form with the following details:
+4. Fill out the **Create a workspace** form with the following details:
 
    - **Name:** Enter **fabric-<inject key="DeploymentID" enableCopy="false"/>**.
    
@@ -69,7 +66,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
    - **Advanced:** Expand it and Under **License mode**, select **Fabric capacity(1)**.
 
-3. Select on exisitng **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
+5. Select on exisitng **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
 
    ![advanced-and-apply](./Images/ws/fabriccapacity.png)
 
@@ -94,17 +91,9 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
     After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-4. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
+3. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
 
    ![02](./Images/01/01.png)
-
-## Explore shortcuts
-
-In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
-
-1. In the **...** menu for the **Files** folder, select **New shortcut**.
-2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
-
 
 ### Task 2.2: Upload files through pipeline
 
