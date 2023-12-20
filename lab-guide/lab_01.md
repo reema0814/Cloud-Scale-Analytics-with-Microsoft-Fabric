@@ -3,7 +3,10 @@
 
 ## Objectives
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
+  In Microsoft Fabric, a lakehouse provides highly scalable file storage in a OneLake store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables 
+  and views based on the open source Delta Lake table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
+  Now that you have created a workspace in the previous step, it's time to switch to the Data engineering experience in the portal and create a data lakehouse into which you will 
+  ingest data.
   
 ### Estimated timing: 60 minutes
 
@@ -72,10 +75,6 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
 ## Excerise 2 : Create a Lakehouse and upload files.
    
-   In Microsoft Fabric, a lakehouse provides highly scalable file storage in a OneLake store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables 
-   and views based on the open source Delta Lake table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
-   Now that you have created a workspace in the previous step, it's time to switch to the Data engineering experience in the portal and create a data lakehouse into which you will 
-   ingest data.
 
 ## Task 2.1 : Create a lakehouse.
 
