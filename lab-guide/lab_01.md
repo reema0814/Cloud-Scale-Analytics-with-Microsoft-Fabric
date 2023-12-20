@@ -2,6 +2,8 @@
 # Lab 01: Getting Started with Microsoft Fabric
 
 ## Objectives
+
+Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
   
 ### Estimated timing: 60 minutes
 
