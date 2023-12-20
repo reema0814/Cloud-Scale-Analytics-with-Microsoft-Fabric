@@ -14,6 +14,19 @@ In this lab, we will use Microsoft Fabric to create a notebook and train a machi
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
+1. Navigate back to your lakehouse, and in the menu for the **Files(1)** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
+
+   ![](./Images/Pg6-S1.png)
+
+2. Navigate to **C:\LabFiles\Files\churn.csv**, select the **churn.csv** file and upload it to the lakehouse.   
+
+   ![](./Images/Pg6-S2.png)
+
+3. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
+
+   ![](./Images/Pg6-S2.1.png)
+
+
 1. At the bottom left of the Power BI portal, switch to the **Data science** experience.
 
 1. In the **Data science** home page, create a new **Notebook**.
@@ -33,20 +46,6 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
     ```    
 
 ## Task 2 : Load data into a dataframe
-
-Using the same workspace, it's time to switch to the *Data science* experience in the portal.
-
-1. Navigate back to your lakehouse, and in the menu for the **Files(1)** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
-
-   ![](./Images/Pg6-S1.png)
-
-2. Navigate to **C:\LabFiles\Files\churn.csv**, select the **churn.csv** file and upload it to the lakehouse.   
-
-   ![](./Images/Pg6-S2.png)
-
-3. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
-
-   ![](./Images/Pg6-S2.1.png)
 
    Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and 
    provide a common structure for working with data in rows and columns.
