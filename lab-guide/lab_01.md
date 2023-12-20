@@ -1,6 +1,6 @@
-### Create a Fabric workspace
+### Getting Started with Microsoft Fabric
 
-
+### exercise 1 : Create a Fabric workspace
 
 #### Task 1.1: Assign Fabric Administrator Role
 
@@ -30,7 +30,8 @@
 
 ----
 
-#### Task 1.2: Sign up for Microsoft Fabric Trial
+
+#### Task 1.2: Create a workspace
 
 1. Copy the **microsoft fabric homepage link**, and open this link inside the VM in a new tab:
 
@@ -42,8 +43,7 @@
 2. Select **Power BI**.
 
    ![Account-manager-start](./Images/ws/microsoftpage.png)
-
-#### Task 1.3: Create a workspace
+   
 
 Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
 
@@ -64,24 +64,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
    ![advanced-and-apply](./Images/ws/fabriccapacity.png)
 
-   # Ingest data with a pipeline in Microsoft Fabric
-
-A data lakehouse is a common analytical data store for cloud-scale analytics solutions. One of the core tasks of a data engineer is to implement and manage the ingestion of data from multiple operational data sources into the lakehouse. In Microsoft Fabric, you can implement *extract, transform, and load* (ETL) or *extract, load, and transform* (ELT) solutions for data ingestion through the creation of *pipelines*.
-
-Fabric also supports Apache Spark, enabling you to write and run code to process data at scale. By combining the pipeline and Spark capabilities in Fabric, you can implement complex data ingestion logic that copies data from external sources into the OneLake storage on which the lakehouse is based, and then uses Spark code to perform custom data transformations before loading it into tables for analysis.
-
-This lab will take approximately **60** minutes to complete.
-
-
-
-## Create a Lakehouse
-
-Large-scale data analytics solutions have traditionally been built around a *data warehouse*, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high *volumes*, *variety*, and *velocity* of new data assets) together with the availability of low-cost storage and cloud-scale distributed compute technologies has led to an alternative approach to analytical data storage; the *data lake*. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a *data lakehouse*; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
-
-In Microsoft Fabric, a lakehouse provides highly scalable file storage in a *OneLake* store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source *Delta Lake* table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
-
-
-Now that you have created a workspace in the previous step, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
+   ### excerise 2 : Create a Lakehouse and upload files.
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
@@ -107,7 +90,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
 
-## Create a pipeline
+### Task 2.2: Upload files through pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
