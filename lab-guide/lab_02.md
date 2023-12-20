@@ -1,4 +1,16 @@
-## Create a notebook
+# Lab 02: Cloud-Scale-Analytics-with-Microsoft-Fabric
+
+## Lab Scenario
+
+## Objectives
+  
+### Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
+
+#### Task 1 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -75,7 +87,7 @@
 10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
 
-## Use SQL to query tables
+## Task 2: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
@@ -96,7 +108,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
     ![Screenshot of a SQL query with results.](./Images/sql-query.png)
 
-## Create a visual query
+## Task 3 : Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
@@ -127,7 +139,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     ![Screenshot of a Visual query with results.](./Images/visual-query-results.png)
 
-## Create a report
+## Task 4 : Create a report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
@@ -163,7 +175,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 ## Review
 
-In this exercise, you have created a lakehouse and imported data into it. You've seen how a lakehouse consists of files and tables stored in a OneLake data store. The managed tables can be queried using SQL, and are included in a default dataset to support data visualizations.
+In this exercise, You've seen how a lakehouse consists of files and tables stored in a OneLake data store. The managed tables can be queried using SQL, and are included in a default dataset to support data visualizations.
 
 
 
