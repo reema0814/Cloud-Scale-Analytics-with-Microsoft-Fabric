@@ -40,8 +40,6 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
 #### Task 1.2: Create a workspace
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
-
 1. Copy the **microsoft fabric homepage link**, and open this link inside the VM in a new tab:
 
    ```
