@@ -1,12 +1,8 @@
 # Lab 02: Cloud-Scale-Analytics-with-Microsoft-Fabric
 
-## Lab Scenario
-
 ## Objectives
   
 ### Estimated timing: 60 minutes
-
-## Architecture Diagram
 
 ## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
 
