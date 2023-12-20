@@ -111,4 +111,4 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 > ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 
-## You have successfully completed the lab
+## Proceed to next lab 
