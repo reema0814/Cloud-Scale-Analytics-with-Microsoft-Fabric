@@ -28,6 +28,10 @@ Apache Spark is an open source engine for distributed data processing, and is wi
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
 
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_03.1.png)
+
 ## Exercise 1 :Analyze data with Apache Spark SDP -Fabric   
 
 ## Task 1 : Create a notebook
