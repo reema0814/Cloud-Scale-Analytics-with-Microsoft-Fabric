@@ -1,9 +1,11 @@
 # Lab 04: Create a Dataflow (Gen2) in Microsoft Fabric
 
-## Objectives
+## Lab Objectives
 
-In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
-This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise.
+Task 1:  Create a Dataflow (Gen2) to ingest data.<br>
+Task 2 : Add data destination for Dataflow.<br>
+Task 3:  Add a dataflow to a pipeline.<br>
+
   
 ### Estimated timing: 30 minutes
 
