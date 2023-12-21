@@ -6,6 +6,10 @@ In this lab, we will use Microsoft Fabric to create a notebook and train a machi
   
 ### Estimated timing: 45 minutes
 
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_07.1.png)
+
 ## Task 1 : Create a notebook
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
