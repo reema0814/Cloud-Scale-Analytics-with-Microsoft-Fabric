@@ -7,6 +7,10 @@ Now that you have created a workspace in the previous step, it's time to switch 
   
 ### Estimated timing: 30 minutes
 
+## Architecture Diagram 
+
+![Navigate-To-AAD](./Images/ws/lab_06.png)
+
 ## Task 1 : Create a KQL database
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
