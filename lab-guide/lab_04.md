@@ -7,6 +7,10 @@ This lab is designed to introduce the different elements of Dataflows (Gen2), an
   
 ### Estimated timing: 30 minutes
 
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_04.png)
+
 ## Task 1:  Create a Dataflow (Gen2) to ingest data
 
  Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
