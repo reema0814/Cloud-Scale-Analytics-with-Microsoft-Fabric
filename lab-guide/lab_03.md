@@ -1,10 +1,14 @@
 # Lab 03: Cloud-Scale-Analytics-with-Microsoft-Fabric
 
-## Lab Scenario
+## Lab Objectives
 
-## Objectives
+Exercise 1 :Analyze data with Apache Spark SDP -Fabric.<br>
+Task 1 : Create a notebook.<br>
+Task 2 : Load data into a dataframe.<br>
+Task 3 : Explore data in a dataframe.<br>
+Task 4 : Use Spark to transform data files.<br>
+Task 5 : Visualize data with Spark.<br>
 
-Apache Spark is an open source engine for distributed data processing, and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
 
 ### Estimated timing: 45 minutes
 
