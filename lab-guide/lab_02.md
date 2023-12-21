@@ -8,6 +8,10 @@ Now that you have created a workspace in the previous step, it's time to switch 
   
 ### Estimated timing: 60 minutes
 
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_02.png)
+
 ## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
 
 #### Task 1 : Create a notebook
