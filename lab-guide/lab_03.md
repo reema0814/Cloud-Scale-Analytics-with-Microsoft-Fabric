@@ -5,14 +5,14 @@
 ## Objectives
 
 Apache Spark is an open source engine for distributed data processing, and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
-  
+
 ### Estimated timing: 45 minutes
 
-## Exercise 1 :Analyze data with Apache Spark SDP -Fabric
+## Prerequisites: 
+  
+### Create a lakehouse and upload files
 
-## Task 1 : Create a lakehouse and upload files
-
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data files you're going to analyze.
+   Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
@@ -28,7 +28,9 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
 
-## Task 2 : Create a notebook
+## Exercise 1 :Analyze data with Apache Spark SDP -Fabric   
+
+## Task 1 : Create a notebook
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
@@ -52,7 +54,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 4. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
-## Task 3 : Load data into a dataframe
+## Task 2 : Load data into a dataframe
 
 Now you're ready to run code that loads the data into a *dataframe*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
@@ -172,7 +174,7 @@ display(df)
 
     **Note**: Only a subset of the rows is displayed, so you may not be able to see examples from all years.
 
-## Task 4 : Explore data in a dataframe
+## Task 3 : Explore data in a dataframe
 
 The dataframe object includes a wide range of functions that you can use to filter, group, and otherwise manipulate the data it contains.
 
@@ -221,7 +223,7 @@ The dataframe object includes a wide range of functions that you can use to filt
 
 1. Run the code cell you added, and note that the results show the number of sales orders per year. Note that the **select** method includes a SQL **year** function to extract the year component of the *OrderDate* field (which is why the code includes an **import** statement to import functions from the Spark SQL library). It then uses an **alias** method is used to assign a column name to the extracted year value. The data is then grouped by the derived *Year* column and the count of rows in each group is calculated before finally the **orderBy** method is used to sort the resulting dataframe.
 
-## Task 5 : Use Spark to transform data files
+## Task 4 : Use Spark to transform data files
 
 A common task for data engineers is to ingest data in a particular format or structure, and transform it for further downstream processing or analysis.
 
@@ -345,7 +347,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 > **Note**: For more information about Spark SQL and dataframes, see the [Spark SQL documentation](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html).
 
-## Task 6 : Visualize data with Spark
+## Task 5 : Visualize data with Spark
 
 A picture is proverbially worth a thousand words, and a chart is often better than a thousand rows of data. While notebooks in Fabric include a built-in chart view for data that is displayed from a dataframe or Spark SQL query, it is not designed for comprehensive charting. However, you can use Python graphics libraries like **matplotlib** and **seaborn** to create charts from data in dataframes.
 
