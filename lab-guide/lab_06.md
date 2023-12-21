@@ -1,9 +1,12 @@
 ## Lab 06: Get started with Real-Time Analytics in Microsoft Fabric
 
-## Objectives
+## lab Objectives
+ Task 1 : Create a KQL database.<br>
+ Task 2 : Use KQL to query the sales table.<br>
+ Task 3 : Create a Power BI report from a KQL Queryset.<br>
+ 
+ 
 
-Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such as real-time data from log files or IoT devices.
-Now that you have created a workspace in the previous step, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal.
   
 ### Estimated timing: 30 minutes
 
