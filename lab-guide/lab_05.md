@@ -6,6 +6,10 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
   
 ### Estimated timing: 30 minutes
 
+## Architecture Diagram 
+
+![Navigate-To-AAD](./Images/ws/lab_05.png)
+
 ## Task 1:  Create a data warehouse
 
 Now that you already have a workspace, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
