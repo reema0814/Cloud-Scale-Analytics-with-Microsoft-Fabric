@@ -1,9 +1,14 @@
 # Lab 05: Analyze data in a data warehouse
 
-## Objectives
+## Lab Objectives
 
-In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
-  
+Task 1:  Create a data warehouse.<br>
+Task 2 : Create tables and insert data.<br>
+Task 3 : Define a data model.<br>
+Task 4 : Query data warehouse tables.<br>
+Task 5 : Create a view and Visualize your data.<br>
+
+
 ### Estimated timing: 30 minutes
 
 ## Architecture Diagram 
