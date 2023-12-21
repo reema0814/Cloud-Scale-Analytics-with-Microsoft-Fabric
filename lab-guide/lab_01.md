@@ -10,6 +10,10 @@
   
 ### Estimated timing: 60 minutes
 
+## Architecture Diagram 
+
+![Navigate-To-AAD](./Images/ws/lab_01.png)
+
 ## Exercise 1 : Create a Fabric workspace
 
 #### Task 1.1: Assign Fabric Administrator Role
