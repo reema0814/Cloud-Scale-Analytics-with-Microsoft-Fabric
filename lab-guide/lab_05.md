@@ -209,7 +209,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 ## Review
 
-In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+In this exercise, the completion of these tasks involved the creation of a pipeline  for orchestrating data workflows. A notebook was created to execute specific tasks within the pipeline. Furthermore, the pipeline was modified and monitored  to ensure adaptability and to track its performance over time. The tasks collectively contributed to the development and management of an effective data processing infrastructure.
 
 ## Proceed to next exercise
 
