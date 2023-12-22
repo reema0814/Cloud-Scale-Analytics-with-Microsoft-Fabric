@@ -122,6 +122,11 @@ Task 2.2 : Upload files .<br>
 
   ![10](./Images/01/10.png)
   
-   **Congratulations!** You have successfully learnt to create a Fabric workspace.
+   ## Review
 
-   ## Proceed to next exercise
+   In this Lab , a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was successfully 
+  created , the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse , establishing the foundation 
+  for subsequent data processing and analysis.
+
+
+  ## Proceed to next exercise
