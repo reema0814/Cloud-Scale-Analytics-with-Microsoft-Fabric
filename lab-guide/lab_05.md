@@ -13,7 +13,7 @@ Task 3 : Modify and Monitor the pipeline.<br>
 
 ![03](./Images/ws/lab_5.1.png)
 
-#### Task 1 :  Create a pipeline
+## Task 1 :  Create a pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
