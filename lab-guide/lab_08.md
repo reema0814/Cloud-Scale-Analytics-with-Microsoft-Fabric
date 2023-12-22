@@ -1,6 +1,6 @@
 ## Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
-## lab Objectives
+## Lab Objectives
  Task 1 : Create a KQL database.<br>
  Task 2 : Use KQL to query the sales table.<br>
  Task 3 : Create a Power BI report from a KQL Queryset.<br>
