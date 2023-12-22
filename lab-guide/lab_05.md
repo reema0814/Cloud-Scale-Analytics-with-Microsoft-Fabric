@@ -4,6 +4,7 @@
 
 Task 1 : Create a pipeline.<br>
 Task 2 : Create a notebook.<br>
+Task 3 : Modify and Monitor the pipeline.<br>
 
   
 ### Estimated timing: 40 minutes
