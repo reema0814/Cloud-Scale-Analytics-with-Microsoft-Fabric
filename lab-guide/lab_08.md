@@ -1,4 +1,4 @@
-## Lab 06: Get started with Real-Time Analytics in Microsoft Fabric
+## Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
 ## lab Objectives
  Task 1 : Create a KQL database.<br>
