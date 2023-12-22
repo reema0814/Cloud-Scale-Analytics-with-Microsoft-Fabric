@@ -4,6 +4,7 @@
 
 Task 1 : Create a pipeline.<br>
 Task 2 : Create a notebook.<br>
+
   
 ### Estimated timing: 40 minutes
 
@@ -178,3 +179,29 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 9. In the hub menu bar on the left, select your lakehouse.
 
 10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+
+#### Task 3 :  Modify and Monitor the pipeline
+
+1. To monitor your data pipeline runs, hover over your pipeline in your workspace. Doing so will bring up three dots to the right of your pipeline name.
+
+   ![.](./Images/ws/modify_runs.png)
+   
+1. Select the three dots to find a list of options. Then select View run history. This action opens a fly-out on the right side of your screen with all your recent runs and run statuses.
+
+1. Select Go to monitoring hub from the prior screenshot to view more details and filter results. Use the filter to find specific data pipeline runs based on several criteria.
+
+   ![.](./Images/ws/monitorinf_tab.png)
+
+1. Select one of your pipeline runs to view detailed information. You’ll be able to view what your pipeline looks like and view more properties like Run ID or errors if your pipeline run failed.
+
+    ![.](./Images/ws/monitoring1.png)
+
+1. You can select Update pipeline to make changes to your pipeline from this screen. This selection will take you back in the pipeline canvas.
+
+1. You can also Rerun your data pipeline. You can choose to rerun the entire pipeline or only rerun the pipeline from the failed activity.
+
+1. A Gantt chart is a view that lets you see the run history over a time range. If you switch to a Gantt view, all pipeline runs will be grouped by name, displayed as bars relative to 
+  how long the run took.
+
+   ![.](./Images/ws/listgrant.png)
+
