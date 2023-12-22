@@ -103,7 +103,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![10](./Images/01/10.png)
 
-  ## Task 2 : Create a notebook
+#### Task 2 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
