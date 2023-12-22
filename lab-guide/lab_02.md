@@ -181,7 +181,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 ## Review
 
-In this exercise, You've seen how a lakehouse consists of files and tables stored in a OneLake data store. The managed tables can be queried using SQL, and are included in a default dataset to support data visualizations.
+In this exercise,data was ingested using a Microsoft Fabric Lakehouse. A notebook was created as the starting point for analysis. SQL was employed to query tables, and a visual query was crafted for a comprehensive data exploration. Finally, a report was generated to communicate insights effectively.
 
 
 
