@@ -311,3 +311,8 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code stops the stream.
 
+## Review
+
+In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+
+## Proceed to next exercise
