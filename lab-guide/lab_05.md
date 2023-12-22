@@ -1,24 +1,42 @@
-## Create a pipeline
+# Lab 05: Cloud-Scale-Analytics-with-Microsoft-Fabric
+
+## Lab Objectives
+
+Task 1 : Create a pipeline.<br>
+Task 2 : Create a notebook.<br>
+  
+### Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+
+#### Task 1 :  Create a pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
+
+1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
+
+1. In the **Synapse Data Engineering** home page, create a new **Lakehouse**.
+
+   - **Name:** Enter **fabric2_<inject key="DeploymentID" enableCopy="false"/>**
 
 1. On the **Home** page for your lakehouse, select **New Data pipeline**.
 
     ![03](./Images/01/datapipeline.png)
 
-2. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
+1. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
    
    ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
    
-3. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
+1. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
    ![03](./Images/01/03.png)
 
-4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
+1. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
 
    ![Screenshot of the Choose data source page.](./Images/01/Pg3-TCreatePipeline-S3.png)
 
-5. Select **Next** and then select **Create new connection** and enter the following settings for the connection to your data source:
+1. Select **Next** and then select **Create new connection** and enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
     - **Connection name**: *Specify a unique name*
@@ -26,7 +44,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
   
     ![04](./Images/01/04.png)
     
-6. Select **Next**. Then ensure the following settings are selected:
+1. Select **Next**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
     - **Request method**: GET
     - **Additional headers**: *Leave blank*
@@ -36,23 +54,23 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
   
     ![05](./Images/01/05.png)
    
-8. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
+1. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **First row as header**: Selected
     - **Compression type**: Leave default
-9. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+1. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
      ![06](./Images/01/06.png)
 
-10. On the **Choose data destination** page, select your existing lakehouse. Then select **Next**.
+1. On the **Choose data destination** page, select your existing lakehouse. Then select **Next**.
 
      ![07](./Images/01/07.png)
 
      ![07](./Images/01/connectdest02.png)
 
-12. Set the following data destination options, and then select **Next**:
+1. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
@@ -60,7 +78,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
     ![08](./Images/01/08.png)
 
-13. Set the following file format options and then select **Next**:
+1. Set the following file format options and then select **Next**:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
@@ -69,23 +87,23 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
     ![09](./Images/01/09.png)
 
-14. On the **Copy summary** page, review the details of your copy operation and then select **Review + Run**.
+1. On the **Copy summary** page, review the details of your copy operation and then select **Review + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
 
-15. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
+1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
 
-16. In the menu bar on the left, select your lakehouse.
+1. In the menu bar on the left, select your lakehouse.
 
-17. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+1. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
     ![10](./Images/01/10.png)
 
-## Create a notebook
+  ## Task 2 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
