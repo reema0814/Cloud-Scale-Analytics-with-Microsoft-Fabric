@@ -384,6 +384,6 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 ## Review
 
-In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+In this exercise, data analysis was conducted with Apache Spark SDP -Fabric. The process began with the creation of a notebook to serve as the analytical environment. Data was loaded into a DataFrame for further processing. Exploration of the DataFrame provided insights into the dataset's characteristics. Spark was then employed to transform data files , enhancing their structure and content. Finally, data visualization with Spark facilitated a comprehensive understanding of patterns and trends within the dataset.
 
-## Proceed to next exercise
+## Proceed to next lab
