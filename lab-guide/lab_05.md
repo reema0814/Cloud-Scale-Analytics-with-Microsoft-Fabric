@@ -11,6 +11,7 @@ Task 3 : Modify and Monitor the pipeline.<br>
 
 ## Architecture Diagram
 
+![03](./Images/ws/lab_5.1.png)
 
 #### Task 1 :  Create a pipeline
 
