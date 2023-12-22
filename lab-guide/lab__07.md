@@ -1,4 +1,4 @@
-# Lab 05: Analyze data in a data warehouse
+# Lab 07: Analyze data in a data warehouse
 
 ## Lab Objectives
 
