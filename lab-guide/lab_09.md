@@ -1,4 +1,4 @@
-# Lab 07: Use notebooks to train a model in Microsoft Fabric
+# Lab 09: Use notebooks to train a model in Microsoft Fabric
 
 ## Lab Objectives
 
