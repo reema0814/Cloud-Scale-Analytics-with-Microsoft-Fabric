@@ -1,12 +1,18 @@
-# Get started with Real-Time Analytics in Microsoft Fabric
+## Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
-Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such as real-time data from log files or IoT devices.
+## Lab Objectives
+ Task 1 : Create a KQL database.<br>
+ Task 2 : Use KQL to query the sales table.<br>
+ Task 3 : Create a Power BI report from a KQL Queryset.<br>
+ 
+  
+### Estimated timing: 30 minutes
 
-This lab takes approximately **30** minutes to complete.
+## Architecture Diagram 
 
-Now that you have created a workspace in the previous step, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal.
+![Navigate-To-AAD](./Images/ws/lab_06.png)
 
-## Create a KQL database
+## Task 1 : Create a KQL database
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
@@ -46,7 +52,7 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
 > **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
-## Use KQL to query the sales table
+## Task 2 : Use KQL to query the sales table
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
@@ -86,7 +92,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
 
-## Create a Power BI report from a KQL Queryset
+## Task 3 : Create a Power BI report from a KQL Queryset
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
@@ -108,104 +114,9 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 7. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
-## Use delta tables for streaming data
-
-Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
-
-1. Navigate back to your workspace and open **Load Sales Notebook**. Add a new code cell in the notebook. Then, in the new cell, add the following code and run it:
-
-    ```python
-   from notebookutils import mssparkutils
-   from pyspark.sql.types import *
-   from pyspark.sql.functions import *
-
-   # Create a folder
-   inputPath = 'Files/data/'
-   mssparkutils.fs.mkdirs(inputPath)
-
-   # Create a stream that reads data from the folder, using a JSON schema
-   jsonSchema = StructType([
-   StructField("device", StringType(), False),
-   StructField("status", StringType(), False)
-   ])
-   iotstream = spark.readStream.schema(jsonSchema).option("maxFilesPerTrigger", 1).json(inputPath)
-
-   # Write some event data to the folder
-   device_data = '''{"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"error"}
-   {"device":"Dev2","status":"ok"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}'''
-   mssparkutils.fs.put(inputPath + "data.txt", device_data, True)
-   print("Source stream created...")
-    ```
-
-    Ensure the message *Source stream created...* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
-
-2. In a new code cell, add and run the following code:
-
-    ```python
-   # Write the stream to a delta table
-   delta_stream_table_path = 'Tables/iotdevicedata'
-   checkpointpath = 'Files/delta/checkpoint'
-   deltastream = iotstream.writeStream.format("delta").option("checkpointLocation", checkpointpath).start(delta_stream_table_path)
-   print("Streaming to delta sink...")
-    ```
-
-    This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location in the **Tables** folder, a table will automatically be created for it.
-
-3. In a new code cell, add and run the following code:
-
-    ```sql
-   %%sql
-
-   SELECT * FROM IotDeviceData;
-    ```
-
-    This code queries the **IotDeviceData** table, which contains the device data from the streaming source.
-
-4. In a new code cell, add and run the following code:
-
-    ```python
-   # Add more data to the source stream
-   more_data = '''{"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"error"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}'''
-
-   mssparkutils.fs.put(inputPath + "more-data.txt", more_data, True)
-    ```
-
-    This code writes more hypothetical device data to the streaming source.
-
-5. Re-run the cell containing the following code:
-
-    ```sql
-   %%sql
-
-   SELECT * FROM IotDeviceData;
-    ```
-
-    This code queries the **IotDeviceData** table again, which should now include the additional data that was added to the streaming source.
-
-6. In a new code cell, add and run the following code:
-
-    ```python
-   deltastream.stop()
-    ```
-
-    This code stops the stream.
-
 ## Review
 
-In this exercise, you have created a lakehouse, a KQL database to analyze the data uploaded into the lakehouse. You used KQL to query the data and create a query set, which was then used to create a Power BI report.
+In this exercise, In summary, these tasks led to the creation of a KQL database , the utilization of KQL to query the sales table , and the successful generation of a Power BI report from a KQL Queryset . The specific implementations and details varied based on the nature of the dataset and the analytical requirements.
 
 
 ## Proceed to next exercise

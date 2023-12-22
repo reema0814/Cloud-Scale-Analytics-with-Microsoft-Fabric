@@ -1,10 +1,21 @@
-# Analyze data in a data warehouse
+# Lab 07: Analyze data in a data warehouse
 
-In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
+## Lab Objectives
 
-This lab will take approximately **30** minutes to complete.
+Task 1:  Create a data warehouse.<br>
+Task 2 : Create tables and insert data.<br>
+Task 3 : Define a data model.<br>
+Task 4 : Query data warehouse tables.<br>
+Task 5 : Create a view and Visualize your data.<br>
 
-## Create a data warehouse
+
+### Estimated timing: 30 minutes
+
+## Architecture Diagram 
+
+![Navigate-To-AAD](./Images/ws/lab_05.png)
+
+## Task 1:  Create a data warehouse
 
 Now that you already have a workspace, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
 
@@ -20,7 +31,7 @@ Now that you already have a workspace, it's time to switch to the *Data Warehous
 
      After a minute or so, a new warehouse will be created:
 
-## Create tables and insert data
+## Task 2 : Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
@@ -80,7 +91,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
     > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
-## Define a data model
+## Task 3 : Define a data model
 
 A relational data warehouse typically consists of *fact* and *dimension* tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
@@ -111,12 +122,9 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
     ![Screenshot of the model with relationships.](./Images/dw-relationships.png)
 
-## Query data warehouse tables
+## Task 4 : Query data warehouse tables
 
 Since the data warehouse is a relational database, you can use SQL to query its tables.
-
-### Query fact and dimension tables
-
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
 1. Create a new SQL Query, and run the following code:
@@ -153,9 +161,10 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
-## Create a view
+## Task 5 : Create a view and Visualize your data
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like *views* and *stored procedures* to encapsulate SQL logic.
+You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
 1. Modify the query you created previously as follows to create a view (note that you need to remove the ORDER BY clause to create a view).
 
@@ -182,37 +191,6 @@ A data warehouse in Microsoft Fabric has many of the same capabilities you may b
    FROM vSalesByRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
-
-### Create a visual query
-
-Instead of writing SQL code, you can use the graphical query designer to query the tables in your data warehouse. This experience is similar to Power Query online, where you can create data transformation steps with no code. For more complex tasks, you can use Power Query's M (Mashup) language.
-
-1. On the **Home** menu, select **New visual query**.
-
-1. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
-
-1. Drag **DimProduct** onto the **canvas**. We now have two tables in our query.
-
-1. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
-
-   ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge.png)
-
-1. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
-
-   ![02](./Images/02/02.png)
-
-1. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
-
-   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview.png)
-
-1. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
-
-1. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
-
-### Visualize your data
-
-You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
-
 1. In the **Explorer** pane, select the **Model** view. 
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
@@ -257,7 +235,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 ## Review
 
-In this exercise, you have created a data warehouse that contains multiple tables. You used SQL to insert data into the tables and query them. and also used the visual query tool. Finally, you enhanced the data model for the data warehouse's default dataset and used it as the source for a report.
+In this exercise,  the completion of these tasks involved the establishment of a data warehouse that served as a centralized repository for structured data. Tables were created, and data was inserted into the warehouse , forming the basis for subsequent analyses. A data model was defined  to represent relationships between entities. Data warehouse tables were queried , extracting specific insights. Finally, a view was created, and data was visualized , providing a customized perspective and enhancing interpretability. The specific implementations and details were tailored to the characteristics of the dataset and the analytical requirements.
 
 
 ## Proceed to next exercise

@@ -1,12 +1,21 @@
-# (Optional) Create a Dataflow (Gen2) in Microsoft Fabric
+# Lab 06: Create a Dataflow (Gen2) in Microsoft Fabric
 
-In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
+## Lab Objectives
 
-This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise. This lab takes **approximately 30 minutes** to complete.
+Task 1:  Create a Dataflow (Gen2) to ingest data.<br>
+Task 2 : Add data destination for Dataflow.<br>
+Task 3:  Add a dataflow to a pipeline.<br>
 
-## Create a Dataflow (Gen2) to ingest data
+  
+### Estimated timing: 30 minutes
 
-Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_04.png)
+
+## Task 1:  Create a Dataflow (Gen2) to ingest data
+
+ Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
@@ -35,7 +44,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 >
 > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
-## Add data destination for Dataflow
+## Task 2 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
 
@@ -69,7 +78,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 1. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow as **Transform Orders Dataflow**.
 
 
-## Add a dataflow to a pipeline
+## Task 3:  Add a dataflow to a pipeline
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 
@@ -103,5 +112,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 >
 > ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
-
-## You have successfully completed the lab
+## Review
+In this execrise , the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data . A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data . Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing . The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.
+ 
+## Proceed to next lab 

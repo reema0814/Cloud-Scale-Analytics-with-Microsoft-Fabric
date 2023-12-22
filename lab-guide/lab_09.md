@@ -1,12 +1,23 @@
-# Use notebooks to train a model in Microsoft Fabric
+# Lab 09: Use notebooks to train a model in Microsoft Fabric
 
-In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn. We will use Scikit-Learn to train the model and MLflow to track its performance. Customer churn is a critical business problem that many companies face, and predicting which customers are likely to churn can help companies retain their customers and increase revenue. By completing this lab, you will gain hands-on experience in machine learning and model tracking, and learn how to use Microsoft Fabric to create a notebook for your projects.
+## Lab Objectives
 
-This lab will take approximately **45** minutes to complete.
+Task 1 : Create a notebook.<br>
+Task 2 : Load data into a dataframe.<br>
+Task 3 : Train a machine learning model.<br>
+Task 4 : Use MLflow to search and view your experiments.<br>
+Task 5 : Explore your experiments.<br>
 
-## Create a lakehouse and upload files
+  
+### Estimated timing: 45 minutes
 
-Using the same workspace, it's time to switch to the *Data science* experience in the portal.
+## Architecture Diagram
+
+![Navigate-To-AAD](./Images/ws/lab_07.1.png)
+
+## Task 1 : Create a notebook
+
+To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
 1. Navigate back to your lakehouse, and in the menu for the **Files(1)** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
 
@@ -20,9 +31,6 @@ Using the same workspace, it's time to switch to the *Data science* experience i
 
    ![](./Images/Pg6-S2.1.png)
 
-## Create a notebook
-
-To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
 1. At the bottom left of the Power BI portal, switch to the **Data science** experience.
 
@@ -42,10 +50,12 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    Use the code in this notebook to train and track models.
     ```    
 
-## Load data into a dataframe
+## Task 2 : Load data into a dataframe
 
-Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
+   Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and 
+   provide a common structure for working with data in rows and columns.
 
+   
 1. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
 
    ![](./Images/Pg6-Edit-S4.png)
@@ -89,7 +99,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     The output shows the rows and columns of customer data from the churn.csv file.
 
-## Train a machine learning model
+## Task 3 : Train a machine learning model
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
@@ -145,7 +155,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     The code trains a classification model using Decision Tree Classifier. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
-## Use MLflow to search and view your experiments
+## Task 4 : Use MLflow to search and view your experiments
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
 
@@ -199,7 +209,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
 
-## Explore your experiments
+## Task 5 : Explore your experiments
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
@@ -231,7 +241,7 @@ Microsoft Fabric will keep track of all your experiments and allows you to visua
 
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
-## Save the model
+## Task 6 : Save the model,Save the notebook and end the Spark session
 
 After comparing machine learning models that you've trained across experiment runs, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
@@ -251,18 +261,16 @@ After comparing machine learning models that you've trained across experiment ru
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
-## Save the notebook and end the Spark session
-
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
 1. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
 
-2. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
+1. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
 
-3. On the notebook menu, select **Stop session** to end the Spark session.
+1. On the notebook menu, select **Stop session** to end the Spark session.
 
 ## Review
 
-In this exercise, you have created a notebook and trained a machine learning model. You used Scikit-Learn to train the model and MLflow to track it´s performance.
+In that exercise, you created a notebook, loaded data, trained a machine learning model, integrated MLflow for experiment tracking, and explored your experiments using MLflow's tools. The specific implementations and details depended on your dataset and the machine learning problem you were working on.
 
-## The lab has been successfully completed; if necessary, proceed to the next exercise, which is optional.
+## You have successfully completed the lab 
