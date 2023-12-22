@@ -7,16 +7,11 @@ Task 3 : Create delta tables.<br>
 Task 4 : Explore table versioning.<br>
 Task 5 : Use delta tables for streaming data.<br>
 
+### Estimated timing: 45 minutes
 
 ##  Architecture Diagram
 
  ![](./Images/ws/lab_04.1.png)
-
-# Use delta tables in Apache Spark
-
-Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* format for Apache Spark. Delta Lake adds support for relational semantics for both batch and streaming data operations, and enables the creation of a Lakehouse architecture in which Apache Spark can be used to process and query data in tables that are based on underlying files in a data lake.
-
-This exercise should take approximately **40** minutes to complete
 
 ## Task 1 : Upload data
 
