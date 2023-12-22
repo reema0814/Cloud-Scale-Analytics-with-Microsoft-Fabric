@@ -10,6 +10,7 @@ Task 5 : Use delta tables for streaming data.<br>
 
 ##  Architecture Diagram
 
+ ![](./Images/ws/lab_04.1.png)
 
 # Use delta tables in Apache Spark
 
