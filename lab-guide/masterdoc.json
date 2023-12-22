@@ -3,7 +3,7 @@
   "Language": "English",
   "Files": [
     {
-      "RawFilePath": "https://raw.githubusercontent.com//CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/Getting-Started.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/Getting-Started.md",
       "Order": 1
     },
     {
@@ -15,11 +15,11 @@
       "Order": 3
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com//CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/lab_03.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/lab_03.md",
       "Order": 4
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/lab_04.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Scale-Analytics-with-Microsoft-Fabric/main/lab-guide/lab_04.md",
       "Order": 5
     },
     {
