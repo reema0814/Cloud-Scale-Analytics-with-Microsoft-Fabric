@@ -271,6 +271,6 @@ Now that you've finished training and evaluating the models, you can save the no
 
 ## Review
 
-In this exercise, you have created a notebook and trained a machine learning model. You used Scikit-Learn to train the model and MLflow to track it´s performance.
+In that exercise, you created a notebook, loaded data, trained a machine learning model, integrated MLflow for experiment tracking, and explored your experiments using MLflow's tools. The specific implementations and details depended on your dataset and the machine learning problem you were working on.
 
-## proceed to the next exercise
+## You have successfully completed the lab 
