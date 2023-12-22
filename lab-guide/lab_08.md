@@ -5,8 +5,6 @@
  Task 2 : Use KQL to query the sales table.<br>
  Task 3 : Create a Power BI report from a KQL Queryset.<br>
  
- 
-
   
 ### Estimated timing: 30 minutes
 
@@ -118,7 +116,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 ## Review
 
-In this exercise, you have created a lakehouse, a KQL database to analyze the data uploaded into the lakehouse. You used KQL to query the data and create a query set, which was then used to create a Power BI report.
+In this exercise, In summary, these tasks led to the creation of a KQL database , the utilization of KQL to query the sales table , and the successful generation of a Power BI report from a KQL Queryset . The specific implementations and details varied based on the nature of the dataset and the analytical requirements.
 
 
 ## Proceed to next exercise
