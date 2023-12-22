@@ -207,3 +207,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
    ![.](./Images/ws/listgrant.png)
 
+## Review
+
+In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+
+## Proceed to next exercise
+
