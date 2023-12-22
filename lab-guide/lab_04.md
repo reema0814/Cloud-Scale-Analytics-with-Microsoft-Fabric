@@ -308,6 +308,7 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
 ## Review
 
-In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+In this exercise, the completion of these tasks involved uploading data  to initiate the dataset. Data exploration in a dataframe  facilitated a comprehensive understanding of the dataset's structure and content. Delta tables were created  to enable efficient storage and management of the data, and exploration of table versioning  provided insights into the dataset's evolution. Additionally, delta tables were utilized for streaming data , enhancing real-time processing capabilities. The tasks collectively contributed to the setup, exploration, and utilization of a dynamic and versioned data infrastructure.
+
 
 ## Proceed to next exercise
