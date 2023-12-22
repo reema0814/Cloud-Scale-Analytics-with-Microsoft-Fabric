@@ -23,7 +23,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![](./Images/data-engineer.png)
+   ![](./Images/01/Pg3-T1-S1.png)
 
 2. In the **Synapse Data Engineering** home page, create a new **fabric_lakehouse**.
 
