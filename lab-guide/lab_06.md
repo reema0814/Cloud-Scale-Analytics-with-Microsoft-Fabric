@@ -104,13 +104,13 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 6. In the menu bar on the left edge, select your lakehouse.
 7. In the **...** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
-   ![Table loaded by a dataflow.](./Images/loaded-table1.png)
+    ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
 > **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
 >
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
 >
-> ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+>  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Review
 In this execrise , the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data . A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data . Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing . The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.
