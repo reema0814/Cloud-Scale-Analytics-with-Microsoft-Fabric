@@ -33,7 +33,7 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
    
 5. When the new database has been created, select the option to get data from **Local File**.
 
-   ![01](./Images/03/01.png)
+    ![01](./Images/03/01.png)
 
 6. Use the wizard to import the data into a new table by selecting the following options:
     - **Destination**:
