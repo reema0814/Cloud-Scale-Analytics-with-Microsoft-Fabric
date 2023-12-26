@@ -12,7 +12,7 @@ Task 4 : Create a report.<br>
 
 ## Architecture Diagram
 
-![Navigate-To-AAD](./Images/ws/lab_02.png)
+  ![Navigate-To-AAD](./Images/ws/lab_02.png)
 
 ## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
 
@@ -20,7 +20,7 @@ Task 4 : Create a report.<br>
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
-      ![11](./Images/01/11.png)
+   ![11](./Images/01/11.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -34,7 +34,7 @@ Task 4 : Create a report.<br>
 
 3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
-     ![12](./Images/01/12.png)
+   ![12](./Images/01/12.png)
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
