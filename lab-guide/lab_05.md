@@ -25,19 +25,19 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. On the **Home** page for your lakehouse, select **New Data pipeline**.
 
-    ![03](./Images/01/datapipeline.png)
+     ![03](./Images/01/datapipeline.png)
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
    
-   ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
+     ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
    
 1. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-   ![03](./Images/01/03.png)
+     ![03](./Images/01/03.png)
 
 1. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
 
-   ![Screenshot of the Choose data source page.](./Images/01/Pg3-TCreatePipeline-S3.png)
+     ![Screenshot of the Choose data source page.](./Images/01/Pg3-TCreatePipeline-S3.png)
 
 1. Select **Next** and then select **Create new connection** and enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
@@ -45,7 +45,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Connection name**: *Specify a unique name*
     - **Authentication kind**: Basic (*Leave the username and password blank*)
   
-    ![04](./Images/01/04.png)
+     ![04](./Images/01/04.png)
     
 1. Select **Next**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
@@ -55,7 +55,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
   
-    ![05](./Images/01/05.png)
+     ![05](./Images/01/05.png)
    
 1. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format**: DelimitedText
@@ -79,7 +79,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **File name**: sales.csv
     - **Copy behavior**: Leave default
    
-    ![08](./Images/01/08.png)
+     ![08](./Images/01/08.png)
 
 1. Set the following file format options and then select **Next**:
     - **File format**: DelimitedText
@@ -88,23 +88,23 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Add header to file**: Selected
     - **Compression type**: Leave default
    
-    ![09](./Images/01/09.png)
+     ![09](./Images/01/09.png)
 
 1. On the **Copy summary** page, review the details of your copy operation and then select **Review + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
+     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
+     ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
 
 1. In the menu bar on the left, select your lakehouse.
 
 1. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
-    ![10](./Images/01/10.png)
+     ![10](./Images/01/10.png)
 
 #### Task 2 : Create a notebook
 
@@ -154,7 +154,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
+     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
@@ -176,7 +176,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
-   ![.](./Images/01/Pg3-Notebook-S10.png)
+    ![.](./Images/01/Pg3-Notebook-S10.png)
  
 9. In the hub menu bar on the left, select your lakehouse.
 
@@ -186,13 +186,13 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. To monitor your data pipeline runs, hover over your pipeline in your workspace. Doing so will bring up three dots to the right of your pipeline name.
 
-   ![.](./Images/ws/modify_runs.png)
+    ![.](./Images/ws/modify_runs.png)
    
 1. Select the three dots to find a list of options. Then select View run history. This action opens a fly-out on the right side of your screen with all your recent runs and run statuses.
 
 1. Select Go to monitoring hub from the prior screenshot to view more details and filter results. Use the filter to find specific data pipeline runs based on several criteria.
 
-   ![.](./Images/ws/monitorinf_tab.png)
+    ![.](./Images/ws/monitorinf_tab.png)
 
 1. Select one of your pipeline runs to view detailed information. You’ll be able to view what your pipeline looks like and view more properties like Run ID or errors if your pipeline run failed.
 
@@ -205,7 +205,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 1. A Gantt chart is a view that lets you see the run history over a time range. If you switch to a Gantt view, all pipeline runs will be grouped by name, displayed as bars relative to 
   how long the run took.
 
-   ![.](./Images/ws/listgrant.png)
+    ![.](./Images/ws/listgrant.png)
 
 ## Review
 

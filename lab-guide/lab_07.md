@@ -157,7 +157,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
 
-   ![](./Images/02/Pg4-T3QF-S2.png)
+    ![](./Images/02/Pg4-T3QF-S2.png)
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
@@ -221,7 +221,7 @@ You can easily visualize the data in either a single query, or in your data ware
 1. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
 1. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
-    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane.png)
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane.png)
 
 1. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
