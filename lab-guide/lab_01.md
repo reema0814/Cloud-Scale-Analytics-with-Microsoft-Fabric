@@ -1,6 +1,9 @@
 
 # Lab 01: Getting Started with Microsoft Fabric
 
+## Lab Overview
+ In this lab, you will embark on a journey to explore and set up Microsoft Fabric. This lab is designed to help you understand the fundamental steps involved in creating a Fabric workspace and managing data within a Lakehouse.
+
 ## Lab Objectives
 
 Exercise 1 : Create a Fabric workspace.<br>
