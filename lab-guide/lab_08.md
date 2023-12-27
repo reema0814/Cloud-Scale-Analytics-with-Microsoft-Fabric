@@ -1,5 +1,9 @@
 ## Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
+## Lab Overview
+
+In this lab, you will explore the exciting realm of real-time analytics using Microsoft Fabric. This lab is designed to introduce you to the powerful Kusto Query Language (KQL) and guide you through the process of creating a KQL database, querying data, and creating compelling Power BI reports.
+
 ## Lab Objectives
  Task 1 : Create a KQL database.<br>
  Task 2 : Use KQL to query the sales table.<br>
