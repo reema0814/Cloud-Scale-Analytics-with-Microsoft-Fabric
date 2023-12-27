@@ -1,5 +1,9 @@
 # Lab 05: Cloud-Scale-Analytics-with-Microsoft-Fabric
 
+## Lab Overview
+
+In this lab, you will immerse yourself in the world of cloud-scale analytics, leveraging Microsoft Fabric to orchestrate data pipelines and analyze information seamlessly.
+
 ## Lab Objectives
 
 Task 1 : Create a pipeline.<br>
