@@ -1,5 +1,9 @@
 # Lab 09: Use notebooks to train a model in Microsoft Fabric
 
+## Lab Overview
+
+In this lab, we will use notebooks to train a model in Microsoft Fabric! You will embark on a journey to explore the capabilities of Microsoft Fabric for training machine learning models using interactive notebooks. Microsoft Fabric provides a powerful environment for data scientists and machine learning practitioners to conduct experiments, track results, and gain insights into model performance.
+
 ## Lab Objectives
 
 Task 1 : Create a notebook.<br>

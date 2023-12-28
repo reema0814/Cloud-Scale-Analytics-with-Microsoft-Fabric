@@ -1,5 +1,9 @@
 # Lab 03: Cloud-Scale-Analytics-with-Microsoft-Fabric
 
+## Lab Overview
+
+The primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
+
 ## Lab Objectives
 
 Exercise 1 :Analyze data with Apache Spark SDP -Fabric.<br>

@@ -1,5 +1,9 @@
 # Lab 07: Analyze data in a data warehouse
 
+## Lab Overview
+
+In this lab, you will dive into the world of data analysis within a data warehouse using Power BI. The lab is structured into tasks that will guide you through the process of creating a data warehouse, defining a data model, querying tables, and visualizing your data. Each task contributes to building a strong foundation for efficient data analysis.
+
 ## Lab Objectives
 
 Task 1:  Create a data warehouse.<br>

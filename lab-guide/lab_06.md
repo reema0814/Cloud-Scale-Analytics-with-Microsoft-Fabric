@@ -1,5 +1,9 @@
 # Lab 06: Create a Dataflow (Gen2) in Microsoft Fabric
 
+## Lab Overview
+
+In this lab, we will delve into the realm of data transformation and ingestion using Microsoft Fabric! In this practical session, you will navigate the process of creating a Dataflow (Gen2), a powerful tool for orchestrating extract, transform, and load (ETL) processes seamlessly.
+
 ## Lab Objectives
 
 Task 1:  Create a Dataflow (Gen2) to ingest data.<br>

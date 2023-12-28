@@ -1,5 +1,9 @@
 # Lab 04 : Use Delta tables in Apache Spark
 
+## Lab Overview
+
+In this lab, we will dive into the powerful capabilities of Apache Spark, specifically focusing on Delta Tables. Delta Tables provide advanced functionality for managing large-scale, versioned datasets, combining the benefits of data lakes and data warehouses. We will also leverage Delta Tables in Spark for efficient data storage, version control, and real-time streaming analytics
+
 ## Lab Objectives
 Task 1 : Upload data.<br>
 Task 2 : Explore data in a dataframe.<br>
