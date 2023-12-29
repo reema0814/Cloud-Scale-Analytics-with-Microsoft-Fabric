@@ -38,7 +38,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **License and subscription**: 
 
-- You'll have access to a pre-configured Microsoft user account with an active Azure subscription, a tenant, and a Microsoft 365 E5 license assigned to the user. 
+- You'll have access to a pre-configured Microsoft user account with an active Azure subscription and a tenant. 
    
   User account has assigned as Owner at subscription and Global administrator at the tenant level. You need to use the same user account throughout the lab to get the most out of the lab. 
 
