@@ -23,17 +23,53 @@ Power BI - Power BI is the world's leading Business Intelligence platform. It en
 
 Contoso Corporation, a large enterprise operating in diverse industries, recognizes the critical importance of leveraging data for strategic decision-making. Facing challenges with disparate data services and an increasingly complex analytics landscape, Contoso has decided to renovate its approach by adopting Microsoft Fabric. This decision stems from the company's vision to streamline and consolidate all data-related processes, encompassing data movement, data engineering, real-time analytics, and business intelligence, into a unified and integrated platform.
 
-## Using this Sandbox
 
-In this sandbox environment, You'll have access to a predeployed environment with an active Azure subscription and a tenant.
+## About the Sandbox
 
-Using this environment, You'll be able to explore complete features and offerings offered by Cloud scale analytics with Microsoft Fabric.
+Using this environment, You'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
 
-The lab scenarios are given as reference material to assist you in getting started with the exploration. You are encouraged to explore Cloud scale analytics with Microsoft Fabric further based on your interests and preferences.
+### Pre-provisioned resources
 
-## Contents:
+#### **Virtual Machines**: 
 
-Cloud scale analytics with Microsoft Fabric
+- 2 *Windows Server 2019 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
+
+  You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
+
+#### **License and subscription**: 
+
+- You'll have access to a pre-configured Microsoft user account with an active Azure subscription, a tenant, and a Microsoft 365 E5 license assigned to the user. 
+   
+  User account has assigned as Owner at subscription and Global administrator at the tenant level. You need to use the same user account throughout the lab to get the most out of the lab. 
+
+#### **Azure Credits**: 
+
+- You have been given a quota of **$180 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
+
+  You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
+
+  You can visit the Azure Subscription page to check the current Azure credit spend and Analysis on **Cost analysis** tab under the Cost Management option.
+
+  ![Picture 1](../media/o1.jpg)
+
+#### **Duration and Deletion of sandbox**:  
+
+- The sandbox environment will be active for **14 days/336** hours from the time of registration. 
+- The allowed uptime of the virtual machine is **40 hours**.
+- The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
+- when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
+
+#### **Best practices**: 
+
+- **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
+
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly in check the Azure spend so that enviornment for a longer duration of time.
+
+- **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
+
+## Lab guide Content:
+
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. You are encouraged to explore Microsoft Purview further based on your interests and preferences.
 
 - Lab 01 - Getting Started with Microsoft Fabric
 - Lab 02 - Cloud-Scale-Analytics-with-Microsoft-Fabric
