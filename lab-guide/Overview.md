@@ -25,7 +25,7 @@ Contoso Corporation, a large enterprise operating in diverse industries, recogni
 
 ## Using this Sandbox
 
-In this sandbox environment, You'll have access to a predeployed environment with an active Azure subscription, a tenant.
+In this sandbox environment, You'll have access to a predeployed environment with an active Azure subscription and a tenant.
 
 Using this environment, You'll be able to explore complete features and offerings offered by Cloud scale analytics with Microsoft Fabric.
 
