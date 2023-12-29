@@ -21,6 +21,7 @@ Power BI - Power BI is the world's leading Business Intelligence platform. It en
 
 ## Sandbox Scenario
 
+Contoso Corporation, a large enterprise, seeks to enhance its analytics capabilities by adopting Microsoft Fabric. Contoso aims to consolidate its data-related processes, from data movement to business intelligence, into a single, integrated platform. The company wants to eliminate the complexity of managing disparate services and ensure a seamless end-to-end analytics experience.
 
 ## Using this Sandbox
 
