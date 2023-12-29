@@ -32,7 +32,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Virtual Machines**: 
 
-- 2 *Windows Server 2019 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
+- 1 *Windows Server 2022 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
 
   You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
 
