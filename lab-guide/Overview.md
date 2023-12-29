@@ -13,7 +13,7 @@
 
 ## Using this Sandbox
 
-In this sandbox environment, You'll have access to a predeployed environment with an active Azure subscription, a tenant, and a Microsoft 365 E5 license assigned to the user. 
+In this sandbox environment, You'll have access to a predeployed environment with an active Azure subscription, a tenant.
 
 Using this environment, You'll be able to explore complete features and offerings offered by Cloud scale analytics with Microsoft Fabric.
 
