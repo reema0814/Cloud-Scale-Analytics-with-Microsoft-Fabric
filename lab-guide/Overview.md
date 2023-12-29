@@ -34,28 +34,18 @@ The lab scenarios are given as reference material to assist you in getting start
 
 Cloud scale analytics with Microsoft Fabric
 
-- Lab 01 - Setup Sentinel Environment
-- Lab 02 - Onboard Server Defender for Cloud
-- Lab 03 - Deploy Microsoft Defender for Endpoint
-- Lab 04 - Ingest Logs from Microsoft Defender for Cloud
-- Lab 05 - Ingest Logs from Microsoft Defender for Endpoint
-- Lab 06 - Ingest Logs from Microsoft Entra ID
-- Lab 07 - Ingest Logs from Microsoft Purview
-- Lab 08 - Ingest Logs from Azure Network security Groups
-- Lab 09 - Ingest Logs from Microsoft 365
-- Lab 10 - Ingest Logs from Microsoft Azure Activity
-- Lab 11 - Create a Watchlist, Threat Indicator
-- Lab 12 - Configure Log Retention
-- Lab 13 - Using Sentinel Training Lab
-- Lab 14 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
-- Lab 15 - Use Repositories in Microsoft Sentinel
-- Lab 16 - Create workbooks
+- Lab 01 - Getting Started with Microsoft Fabric
+- Lab 02 - Cloud-Scale-Analytics-with-Microsoft-Fabric
+- Lab 03 - Cloud-Scale-Analytics-with-Microsoft-Fabric
+- Lab 04 - Use Delta tables in Apache Spark
+- Lab 05 - Cloud-Scale-Analytics-with-Microsoft-Fabric
+- Lab 06 - Create a Dataflow (Gen2) in Microsoft Fabric
+- Lab 07 - Analyze data in a data warehouse
+- Lab 08 - Get started with Real-Time Analytics in Microsoft Fabric
+- Lab 09 - Use notebooks to train a model in Microsoft Fabric
 
 ### Azure services and related products
 
-- Log Analytics Workspace
-- Microsoft Defender for Cloud
-- Microsoft Defender for Endpoint
 - Microsoft Entra ID
-- Microsoft Sentinel
+
 
