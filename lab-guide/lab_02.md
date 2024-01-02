@@ -42,7 +42,7 @@ Task 4 : Create a report.<br>
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
-   >**Note:** Wait untill the previous code completes execution
+   >**Note:** Wait until the previous code completes execution
    
     ```python
    from pyspark.sql.functions import *
@@ -66,7 +66,7 @@ Task 4 : Create a report.<br>
 
     This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
 
-5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
+5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
 
@@ -185,7 +185,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 ## Review
 
-In this exercise,data was ingested using a Microsoft Fabric Lakehouse. A notebook was created as the starting point for analysis. SQL was employed to query tables, and a visual query was crafted for a comprehensive data exploration. Finally, a report was generated to communicate insights effectively.
+In this exercise, data was ingested using a Microsoft Fabric Lakehouse. A notebook was created as the starting point for analysis. SQL was employed to query tables, and a visual query was crafted for a comprehensive data exploration. Finally, a report was generated to communicate insights effectively.
 
 
 
