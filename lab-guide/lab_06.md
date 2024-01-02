@@ -117,6 +117,6 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 >  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Review
-In this execrise , the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data . A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data . Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing . The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.
+In this execrise, the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data. A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data. Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing. The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.
  
 ## Proceed to next lab 

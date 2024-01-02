@@ -20,7 +20,7 @@ In this lab, you will explore the exciting realm of real-time analytics using Mi
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
-1. In the **Microsoft Fabric** https://app.fabric.microsoft.com/ experience portal , select the **Synapse Real-Time Analytics** experience image as shown here:
+1. In the **Microsoft Fabric** https://app.fabric.microsoft.com/ experience portal, select the **Synapse Real-Time Analytics** experience image as shown here:
     
      ![00](./Images/03/synpase.png)
 

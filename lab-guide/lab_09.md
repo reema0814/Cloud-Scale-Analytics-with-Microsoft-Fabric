@@ -245,7 +245,7 @@ Microsoft Fabric will keep track of all your experiments and allows you to visua
 
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
-## Task 6 : Save the model,Save the notebook and end the Spark session
+## Task 6 : Save the model, Save the notebook and end the Spark session
 
 After comparing machine learning models that you've trained across experiment runs, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
