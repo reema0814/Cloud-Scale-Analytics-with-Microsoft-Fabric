@@ -26,7 +26,7 @@ Contoso Corporation, a large enterprise operating in diverse industries, recogni
 
 ## About the Sandbox
 
-Using this environment, You'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
+Using this environment, you'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
 
 ### Pre-provisioned resources
 
@@ -34,7 +34,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 - 1 *Windows Server 2022 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
 
-  You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
+  You are recommended to use the same virtual machine throughout the lab for best experience.
 
 #### **License and subscription**: 
 
@@ -44,7 +44,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Azure Credits**: 
 
-- You have been given a quota of **$180 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
+- You have been given a quota of **$180 USD** which includes the running cost of pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
   You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
 
@@ -63,7 +63,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 - **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly in check the Azure spend so that enviornment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of regularly checking the Cost Analysis report for the assigned Azure subscription to ensure the sustainability of the environment over an extended period.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 
