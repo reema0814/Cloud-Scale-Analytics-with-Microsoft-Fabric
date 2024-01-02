@@ -132,7 +132,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
-   >**Note:** Wait untill the previous code completes execution
+   >**Note:** Wait until the previous code completes execution
    
     ```python
    from pyspark.sql.functions import *
@@ -213,7 +213,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 ## Review
 
-In this exercise, the completion of these tasks involved the creation of a pipeline  for orchestrating data workflows. A notebook was created to execute specific tasks within the pipeline. Furthermore, the pipeline was modified and monitored  to ensure adaptability and to track its performance over time. The tasks collectively contributed to the development and management of an effective data processing infrastructure.
+In this exercise, the completion of these tasks involved the creation of a pipeline for orchestrating data workflows. A notebook was created to execute specific tasks within the pipeline. Furthermore, the pipeline was modified and monitored to ensure adaptability and to track its performance over time. The tasks collectively contributed to the development and management of an effective data processing infrastructure.
 
 ## Proceed to next exercise
 
