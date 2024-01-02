@@ -80,11 +80,11 @@ Task 2.2 : Upload files .<br>
 
    - **Advanced:** Expand it and Under **License mode**, select **Fabric capacity(1)**.
 
-5. Select on exisitng **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
+5. Select on existing **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
 
     ![advanced-and-apply](./Images/ws/fabriccapacity.png)
 
-## Excerise 2 : Create a Lakehouse and upload files.
+## Exercise 2 : Create a Lakehouse and upload files.
    
 
 ## Task 2.1 : Create a lakehouse.
@@ -127,8 +127,8 @@ Task 2.2 : Upload files .<br>
   
    ## Review
 
-   In this Lab , a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was successfully 
-  created , the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse , establishing the foundation 
+    In this Lab, a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was successfully 
+  created, the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse, establishing the foundation 
   for subsequent data processing and analysis.
 
 
