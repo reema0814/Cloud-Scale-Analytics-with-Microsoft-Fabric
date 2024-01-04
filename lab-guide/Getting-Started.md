@@ -36,5 +36,9 @@
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+1. Ensure the timely deallocation of virtual machines from the **Resources tab**. When they are not actively in use, aiming to minimize costs.
+
+   ![06](./Images/running2.png)
       
 1. Now, click on the **Next** from lower right corner to move on next page.
