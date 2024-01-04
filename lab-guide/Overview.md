@@ -56,7 +56,7 @@ Using this environment, you'll be able to explore complete features and offering
 #### **Duration and Deletion of sandbox**:  
 
 - The sandbox environment will be active for **14 days/336** hours from the time of registration. 
-- The allowed uptime of the virtual machine is **40 hours**.
+- The maximum allowed virtual machine uptime is only **40 hours**. It is recommended to deallocate the virtual machine when not in use.
 - The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the 
   virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will 
   shutdown automatically. This feature is enabled in virtual machines to optimize Azure costs.
