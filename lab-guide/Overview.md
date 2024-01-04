@@ -58,8 +58,8 @@ Using this environment, you'll be able to explore complete features and offering
 - The sandbox environment will be active for **14 days/336** hours from the time of registration. 
 - The allowed uptime of the virtual machine is **40 hours**.
 - The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the 
-  virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will shut 
-  down automatically. This feature is enabled in virtual machines to optimize Azure costs.
+  virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will 
+  shutdown automatically. This feature is enabled in virtual machines to optimize Azure costs.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
