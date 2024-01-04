@@ -73,7 +73,9 @@ Using this environment, you'll be able to explore complete features and offering
 
 ## Lab guide Content:
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
+
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Fabric feature. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
 
 - Lab 01 - Getting Started with Microsoft Fabric
 - Lab 02 - Cloud-Scale-Analytics-with-Microsoft-Fabric
