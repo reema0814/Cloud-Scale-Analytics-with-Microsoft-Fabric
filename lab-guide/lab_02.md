@@ -1,4 +1,4 @@
-# Lab 02: Cloud-Scale-Analytics-with-Microsoft-Fabric
+# Lab 02: Ingest data with a Microsoft Fabric Lakehouse 
 
 ## Lab Overview
 
@@ -6,7 +6,6 @@ In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This l
 
 ## Lab Objectives
 
-Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse.<br>
 Task 1 : Create a notebook.<br>
 Task 2: Use SQL to query tables.<br>
 Task 3 : Create a visual query.<br>
@@ -17,8 +16,6 @@ Task 4 : Create a report.<br>
 ## Architecture Diagram
 
   ![Navigate-To-AAD](./Images/ws/lab_02.png)
-
-## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
 
 #### Task 1 : Create a notebook
 
