@@ -1,4 +1,4 @@
-## Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
+# Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
 ## Lab Overview
 
