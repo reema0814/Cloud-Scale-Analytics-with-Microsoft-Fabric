@@ -17,7 +17,7 @@ Task 4 : Create a report.<br>
 
   ![Navigate-To-AAD](./Images/ws/lab_02.png)
 
-#### Task 1 : Create a notebook
+## Task 1 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
