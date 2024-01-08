@@ -6,10 +6,10 @@ In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This l
 
 ## Lab Objectives
 
-Task 1 : Create a notebook.<br>
-Task 2: Use SQL to query tables.<br>
-Task 3 : Create a visual query.<br>
-Task 4 : Create a report.<br>
+Task 1 : Create a notebook <br>
+Task 2: Use SQL to query tables<br>
+Task 3 : Create a visual query<br>
+Task 4 : Create a report<br>
   
 ### Estimated timing: 60 minutes
 
