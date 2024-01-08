@@ -6,11 +6,11 @@ In this lab, we will use notebooks to train a model in Microsoft Fabric! You wil
 
 ## Lab Objectives
 
-Task 1 : Create a notebook.<br>
-Task 2 : Load data into a dataframe.<br>
-Task 3 : Train a machine learning model.<br>
-Task 4 : Use MLflow to search and view your experiments.<br>
-Task 5 : Explore your experiments.<br>
+Task 1 : Create a notebook<br>
+Task 2 : Load data into a dataframe<br>
+Task 3 : Train a machine learning model.br>
+Task 4 : Use MLflow to search and view your experiments<br>
+Task 5 : Explore your experiments<br>
 
   
 ### Estimated timing: 45 minutes
