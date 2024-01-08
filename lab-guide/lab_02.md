@@ -15,7 +15,7 @@ Task 4 : Create a report<br>
 
 ## Architecture Diagram
 
-  ![Navigate-To-AAD](./Images/ws/lab_02.png)
+   ![Navigate-To-AAD](./Images/ws/lab_02.png)
 
 ## Task 1 : Create a notebook
 
@@ -33,7 +33,7 @@ Task 4 : Create a report<br>
 
    ![11](./Images/01/Pg3-Notebook-S2.png) 
 
-3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+3. In the **ellipse** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
    ![12](./Images/01/12.png)
 
@@ -61,7 +61,8 @@ Task 4 : Create a report<br>
    df.write.format("delta").mode("append").saveAsTable(table_name)
     ```
 
-    This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
+   This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a 
+   **managed table** - appending the data if the table already exists.
 
 5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
@@ -74,7 +75,7 @@ Task 4 : Create a report<br>
     ```python
     df.write.format("delta").saveAsTable("external_sales", path="<abfs_path>/external_sales")
 
-    #In the Lakehouse explorer pane, in the ... menu for the Files folder, select Copy ABFS path.
+    #In the Lakehouse explorer pane, in the ellipse menu for the Files folder, select Copy ABFS path.
 
     #The ABFS path is the fully qualified path to the Files folder in the OneLake storage for your lakehouse - similar to this:
 
@@ -83,7 +84,7 @@ Task 4 : Create a report<br>
     > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
 
 
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **ellipse** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
 8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
@@ -100,7 +101,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
-    ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint.png)
+   ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint.png)
 
 2. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
