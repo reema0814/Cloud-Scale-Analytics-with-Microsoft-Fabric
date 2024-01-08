@@ -33,7 +33,7 @@ Now that you already have a workspace, it's time to switch to the *Data Warehous
    
    - **Name:** Enter **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** .
 
-     After a minute or so, a new warehouse will be created:
+     After a minute or so, a new warehouse will be created
 
 ## Task 2 : Create tables and insert data
 
@@ -78,7 +78,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 7. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
-8. On the Home menu tab, use the New SQL Query button to create a new query for each table. Open the first text file, from C:\LabFiles\Files\create-dw-01.txt, and copy the Transact-SQL code related to the 'DimProduct' table. Paste the 'DimProduct' table code into the query pane you created and execute the query. Repeat the steps for the 'DimCustomer', 'DimDate' and 'FactSalesOrder' tables using the respective files, C:\LabFiles\Files\create-dw-02.txt and C:\LabFiles\Files\create-dw-03.txt. Please ensure that each query is executed in its own query pane for each respective table.
+8. On the Home menu tab, use the New SQL Query button to create a new query for each table. Open the first text file, from **C:\LabFiles\Files\create-dw-01.txt**, and copy the Transact-SQL code related to the **'DimProduct'** table. Paste the 'DimProduct' table code into the query pane you created and execute the query. Repeat the steps for the **'DimCustomer'**, **'DimDate'** and **'FactSalesOrder'** tables using the respective files, **C:\LabFiles\Files\create-dw-02.txt** and **C:\LabFiles\Files\create-dw-03.txt**. Please ensure that each query is executed in its own query pane for each respective table.
 <!-- I had to remove the GO command in this query as well -->
 
    ![01](./Images/02/Pg4-T2-S7.png)
@@ -144,7 +144,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ORDER BY CalendarYear, MonthOfYear;
     ```
 
-    Note that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
+    > **Note**: that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
 
 2. Modify the query as follows to add a second dimension to the aggregation.
 
@@ -239,7 +239,6 @@ You can easily visualize the data in either a single query, or in your data ware
 
 ## Review
 
-In this exercise, the completion of these tasks involved the establishment of a data warehouse that served as a centralized repository for structured data. Tables were created, and data was inserted into the warehouse , forming the basis for subsequent analyses. A data model was defined  to represent relationships between entities. Data warehouse tables were queried, extracting specific insights. Finally, a view was created, and data was visualized, providing a customized perspective and enhancing interpretability. The specific implementations and details were tailored to the characteristics of the dataset and the analytical requirements.
-
+In this exercise, the completion of these tasks involved the establishment of a data warehouse that served as a centralized repository for structured data. Tables were created, and data was inserted into the warehouse , forming the basis for subsequent analysis. A data model was defined  to represent relationships between entities. Data warehouse tables were queried, extracting specific insights. Finally, a view was created, and data was visualized in PowerBi, providing a customized perspective and enhancing interpretability. The specific implementations and details were tailored to the characteristics of the dataset and the analytical requirements.
 
 ## Proceed to next exercise
