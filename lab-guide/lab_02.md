@@ -64,7 +64,7 @@ Task 4 : Create a report.<br>
    df.write.format("delta").mode("append").saveAsTable(table_name)
     ```
 
-    This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
+    This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, adds and derives columns, filters and reorders columns, and saves the transformed data as a **managed table** - appending the data if the table already exists.
 
 5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
