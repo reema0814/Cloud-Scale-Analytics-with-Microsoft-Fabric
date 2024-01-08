@@ -41,4 +41,4 @@
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
       
-1. Now, click on the **Next** from lower right corner to move on next page.
+1. Now, click on the **Next** from lower right corner to move on next page, this helps you to move to the instruction page of each exercises.
