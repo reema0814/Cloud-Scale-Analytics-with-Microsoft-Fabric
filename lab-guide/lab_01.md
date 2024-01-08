@@ -54,18 +54,16 @@ Task 2.2 : Upload files .<br>
 
 #### Task 1.2: Create a workspace
 
-1. Copy the **microsoft fabric homepage link**, and open this link inside the VM in a new tab:
+1. Copy the **Microsoft Fabric homepage link**, and open this link inside the VM in a new tab:
 
    ```
    https://app.fabric.microsoft.com/
    ```
 
-
 2. Select **Power BI**.
 
     ![Account-manager-start](./Images/ws/microsoftpage.png)
    
-
 
 3.  Now, select **Workspaces** and click on **+ New workspace**:
 
