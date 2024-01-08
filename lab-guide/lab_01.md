@@ -116,7 +116,6 @@ Task 2.2 : Upload files <br>
 
    ![03](./Images/ws/upload.png)
 
-
 5. In the menu bar on the left, select your lakehouse.
    
 
