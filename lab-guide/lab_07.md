@@ -6,11 +6,11 @@ In this lab, you will dive into the world of data analysis within a data warehou
 
 ## Lab Objectives
 
-Task 1:  Create a data warehouse.<br>
-Task 2 : Create tables and insert data.<br>
-Task 3 : Define a data model.<br>
-Task 4 : Query data warehouse tables.<br>
-Task 5 : Create a view and Visualize your data.<br>
+Task 1:  Create a data warehouse<br>
+Task 2 : Create tables and insert data<br>
+Task 3 : Define a data model<br>
+Task 4 : Query data warehouse tables<br>
+Task 5 : Create a view and Visualize your data<br>
 
 
 ### Estimated timing: 30 minutes
