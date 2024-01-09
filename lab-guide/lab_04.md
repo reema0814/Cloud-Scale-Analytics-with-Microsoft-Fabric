@@ -25,7 +25,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 ![](./Images/01/Pg3-T1-S1.png)
 
-2. In the **Synapse Data Engineering** home page, select the existing  ****fabric_lakehouse_<inject key="DeploymentID" enableCopy="false"/>****.
+2. In the **Synapse Data Engineering** home page, create new lakehouse  ****fabric_lakehouse****.
 
     You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
