@@ -23,7 +23,7 @@ Task 3:  Add a dataflow to a pipeline.<br>
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-   ![New dataflow.](./Images/new-dataflow1.png)
+    ![New dataflow.](./Images/new-dataflow1.png)
 
 2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
@@ -34,15 +34,16 @@ Task 3:  Add a dataflow to a pipeline.<br>
 
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
-   ![Query in the Power Query editor.](./Images/power-query1.png)
+    ![Query in the Power Query editor.](./Images/power-query1.png)
 
 4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here:
 
-   ![Custom column in Power Query editor.](./Images/custom-column1.png)
+    ![Custom column in Power Query editor.](./Images/custom-column1.png)
+   
+    ![Query with a custom column step.](./Images/custom-column-added1.png)
 
- The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+     **The step to add the custom column is added to the query and the resulting column is displayed in the data pane**
 
-   ![Query with a custom column step.](./Images/custom-column-added1.png)
 
 > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
 >
@@ -110,11 +111,9 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
     ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
-> **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
->
-> You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
->
->  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+> **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.<br>
+  You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.<br>
+    ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Review
 In this execrise, the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data. A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data. Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing. The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.
