@@ -27,9 +27,9 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 2. In the **Synapse Data Engineering** home page, choose the Existing **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
-3. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
+3. Return to the web browser tab containing your lakehouse, and In the menu select **ellipse** icon for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
-4. In the **ellipse** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
+4. In the menu select  **ellipse** icon for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
    
 5. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
@@ -47,7 +47,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
-4. In the **ellipse** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+4. In the menu select  **ellipse** icon for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -68,7 +68,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     | 1 | 771 | Mountain-100 Silver, 38 | Mountain Bikes | 3399.9900 |
     | 2 | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
     | 3 | 773 | Mountain-100 Silver, 44 | Mountain Bikes | 3399.9900 |
-    | ellipse | ellipse | ellipse | ellipse | ellipse |
+    | ... | ... | ... | ... | ... |
 
 ## Task 3 : Create delta tables
 
@@ -84,7 +84,7 @@ You can save the dataframe as a delta table by using the `saveAsTable` method. D
    df.write.format("delta").saveAsTable("managed_products")
     ```
 
-2. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
 
 ### Create an *external* table
 
@@ -96,7 +96,7 @@ You can also create *external* tables for which the schema metadata is defined i
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
 
-2. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Files** folder, select **Copy ABFS path**.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Files** folder, select **Copy ABFS path**.
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
@@ -106,9 +106,9 @@ You can also create *external* tables for which the schema metadata is defined i
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
 
-4. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+4. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
-5. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+5. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
 ### Compare *managed* and *external* tables
 
@@ -145,7 +145,7 @@ Let's explore the differences between managed and external tables.
    DROP TABLE external_products;
     ```
 
-4. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
+4. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
 5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
@@ -161,7 +161,7 @@ Let's explore the differences between managed and external tables.
    LOCATION 'Files/external_products';
     ```
 
-2. In the **Lakehouse explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that it's schema matches the original dataframe that was saved in the **external_products** folder.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that it's schema matches the original dataframe that was saved in the **external_products** folder.
 
 3. Add another code cell and run the following code:
 
@@ -246,7 +246,7 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
    {"device":"Dev2","status":"error"}
    {"device":"Dev1","status":"ok"}'''
    mssparkutils.fs.put(inputPath + "data.txt", device_data, True)
-   print("Source stream createdellipse")
+   print("Source stream created...")
     ```
 
     Ensure the message *Source stream createdellipse* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
@@ -258,7 +258,7 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
    delta_stream_table_path = 'Tables/iotdevicedata'
    checkpointpath = 'Files/delta/checkpoint'
    deltastream = iotstream.writeStream.format("delta").option("checkpointLocation", checkpointpath).start(delta_stream_table_path)
-   print("Streaming to delta sinkellipse")
+   print("Streaming to delta sink...")
     ```
 
     This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location in the **Tables** folder, a table will automatically be created for it.
