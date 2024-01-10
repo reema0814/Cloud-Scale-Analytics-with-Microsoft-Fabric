@@ -32,7 +32,7 @@ Task 5 : Visualize data with Spark<br>
 
 4. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
-   ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
+   ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files1.png)
 
 ## Architecture Diagram
 
@@ -73,7 +73,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 1. With the notebook visible, expand the **Files** list and select the **orders** folder so that the CSV files are listed next to the notebook editor, like this:
 
-      ![Screenshot of a notebook with a Files pane.](./Images/notebook-files.png)
+      ![Screenshot of a notebook with a Files pane.](./Images/notebook-files1.png)
 
 2. In the **...** menu for **2019.csv**, select **Load data** > **Spark**.
 
@@ -280,7 +280,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
 
-    ![Screenshot of a folder containing parquet files.](./Images/saved-parquet.png)
+    ![Screenshot of a folder containing parquet files.](./Images/saved-parquet1.png)
 
 1. Add a new cell with the following code to load a new dataframe from the parquet files in the **transformed_orders/orders** folder:
 
@@ -300,7 +300,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
-    ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files.png)
+    ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files1.png)
 
     Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it easier to filter data.
 
@@ -329,7 +329,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 1. In the **Explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
 
-    ![Screenshot of the salesorder table in Explorer.](./Images/table-view.png)
+    ![Screenshot of the salesorder table in Explorer.](./Images/table-view1.png)
 
 1. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**.
 
