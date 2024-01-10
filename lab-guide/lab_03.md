@@ -24,7 +24,7 @@ Task 5 : Visualize data with Spark<br>
 
 2. In the **Synapse Data Engineering** home page, choose the Existing **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
-3. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\Files\orders** to the lakehouse.
+3. Return to the web browser tab containing your lakehouse, and In the menu select **ellipse** icon for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\Files\orders** to the lakehouse.
 
 4. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
@@ -73,7 +73,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
       ![Screenshot of a notebook with a Files pane.](./Images/notebook-files1.png)
 
-2. In the **ellipse** menu for **2019.csv**, select **Load data** > **Spark**.
+2. In the menu select **ellipse** icon for **2019.csv**, select **Load data** > **Spark**.
 
       ![](./Images/Pg7-LoadData-S2.png)
 
@@ -276,7 +276,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
     > **Note**: Commonly, *Parquet* format is preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **ellipse** menu for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
+1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
 
     ![Screenshot of a folder containing parquet files.](./Images/saved-parquet1.png)
 
@@ -296,7 +296,7 @@ A common task for data engineers is to ingest data in a particular format or str
    print ("Transformed data saved!")
     ```
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **ellipse** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
+1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
     ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files1.png)
 
@@ -327,11 +327,11 @@ A common task for data engineers is to ingest data in a particular format or str
 
 1. Run the code cell and review the output, which describes the definition of the new table.
 
-1. In the **Explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
+1. In the **Explorer** pane, In the menu select **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view1.png)
 
-1. In the **ellipse** menu for the **salesorders** table, select **Load data** > **Spark**.
+1. In the menu select **ellipse** icon for the **salesorders** table, select **Load data** > **Spark**.
 
     A new code cell containing code similar to the following example is added to the notebook:
 
