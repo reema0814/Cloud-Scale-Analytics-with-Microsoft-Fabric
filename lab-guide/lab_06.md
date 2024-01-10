@@ -23,6 +23,8 @@ Task 3:  Add a dataflow to a pipeline.<br>
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
+   >**Note**: Ensure that the data warehouse is selected from the bottom left-hand corner.
+  
     ![New dataflow.](./Images/new-dataflow1.png)
 
 2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
@@ -72,7 +74,7 @@ Task 3:  Add a dataflow to a pipeline.<br>
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-1. Now repeat the process outlined earlier to add a lakehouse destination.
+1. Re-execute the steps provided earlier to include a lakehouse destination, beginning with Task 2, Step 1, and progressing through the following steps
 
 8. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
 
@@ -107,7 +109,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
     ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
 6. In the menu bar on the left edge, select your lakehouse.
-7. In the **...** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+7. In the **ellipse** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
     ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
