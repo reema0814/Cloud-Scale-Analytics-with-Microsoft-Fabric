@@ -251,17 +251,17 @@ After comparing machine learning models that you've trained across experiment ru
 
 1. In the experiment overview, ensure the **View** tab is selected.
 
-1. Select **Run details**.
+2. Select **Run details**.
 
-1. Select the run with the highest accuracy. 
+3. Select the run with the highest accuracy. 
 
-1. Scroll right to see the Save as model option. Select **Save** in the **Save as model** box.
+4. Scroll right to see the Save as model option. Select **Save** in the **Save as model** box.
 
-1. Select **Create a new model** in the newly opened pop-up window.
+5. Select **Create a new model** in the newly opened pop-up window.
 
-1. Name the model `model-churn`, and select **Create**. 
+6. Name the model `model-churn`, and select **Create**. 
 
-1. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
+7. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
 >   **Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
