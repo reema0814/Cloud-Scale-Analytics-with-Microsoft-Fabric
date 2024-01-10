@@ -19,21 +19,19 @@ Task 5 : Use delta tables for streaming data<br>
 
 ## Task 1 : Upload data
 
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
+Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and choose the existing lakehouse for the data you're going to analyze.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
 ![](./Images/01/Pg3-T1-S1.png)
 
-2. In the **Synapse Data Engineering** home page, create new lakehouse  ****fabric_lakehouse****.
+2. In the **Synapse Data Engineering** home page, choose the Existing **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
-    You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
+3. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
-4. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
-
-5. In the **ellipse** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
+4. In the **ellipse** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
    
-6. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
+5. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
 ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
 
