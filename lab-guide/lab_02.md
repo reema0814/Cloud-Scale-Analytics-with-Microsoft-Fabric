@@ -33,7 +33,7 @@ Task 4 : Create a report<br>
 
    ![11](./Images/01/Pg3-Notebook-S2.png) 
 
-3. In the **ellipse** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+3. In the menu select **ellipse** icon for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
    ![12](./Images/toggle.png)
 
@@ -70,7 +70,7 @@ Task 4 : Create a report<br>
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
-6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **ellipse** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
 7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
