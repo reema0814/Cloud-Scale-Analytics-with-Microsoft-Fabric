@@ -6,9 +6,9 @@ In this lab, we will delve into the realm of data transformation and ingestion u
 
 ## Lab Objectives
 
-Task 1:  Create a Dataflow (Gen2) to ingest data.<br>
-Task 2 : Add data destination for Dataflow.<br>
-Task 3:  Add a dataflow to a pipeline.<br>
+Task 1:  Create a Dataflow (Gen2) to ingest data<br>
+Task 2 : Add data destination for Dataflow<br>
+Task 3:  Add a dataflow to a pipeline<br>
 
   
 ### Estimated timing: 30 minutes
@@ -63,26 +63,25 @@ Task 3:  Add a dataflow to a pipeline.<br>
 
 3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
-    ![Data destination configuration page.](./Images/data-destination-target1.png)
+    ![Data destination configuration page.](./Images/lakehouse.png)
 
    > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
-    ![Data destination settings page.](./Images/destination-settings123.png)
-
-1. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+4.  On the **Destination settings** page, select **Append**, then go  to OrderDate and MonthNo columns . Click on the down Arrow and **Change Type** and then save the settings
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-1. Re-execute the steps provided earlier to include a lakehouse destination, beginning with Task 2, Step 1, and progressing through the following steps
+    ![Data destination settings page.](./Images/save_settings.png)
 
-8. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+5. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
 
+ 
     ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
-9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+6. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
-1. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow as **Transform Orders Dataflow**.
+7. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow as **Transform Orders Dataflow**.
 
 
 ## Task 3:  Add a dataflow to a pipeline
