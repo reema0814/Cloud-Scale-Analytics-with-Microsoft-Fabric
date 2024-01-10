@@ -30,7 +30,7 @@ Using this environment, you'll be able to explore complete features and offering
 
 ### Pre-provisioned resources
 
-#### Virtual Machines: 
+#### Virtual Machine: 
 
 - 1 *Windows Server 2022 Datacenter* Virtual machines. As part of the automation, resources linked to virtual machines, including virtual networks, network security groups, managed disks, network interface cards, and IP addresses, are deployed.
 
