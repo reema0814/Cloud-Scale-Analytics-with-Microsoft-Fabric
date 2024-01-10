@@ -28,6 +28,7 @@ Task 5 : Visualize data with Spark<br>
 
 4. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
+
    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files1.png)
 
 ## Architecture Diagram
@@ -44,12 +45,13 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     ![](./Images/Pg7-Notebook-S1.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+   
 
-2. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
+3. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
     When the cell changes to a markdown cell, the text it contains is rendered.
 
-3. Use the **&#128393;** (Edit) button to switch the cell to editing mode, then modify the markdown as follows:
+4. Use the **&#128393;** (Edit) button to switch the cell to editing mode, then modify the markdown as follows:
 
     ```
    # Sales order data exploration
@@ -57,7 +59,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
    Use the code in this notebook to explore sales order data.
     ```
 
-4. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
+5. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
 ## Task 2 : Load data into a dataframe
 
