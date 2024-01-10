@@ -29,7 +29,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. On the **Home** page for your lakehouse, select **New Data pipeline**.
 
-     ![03](./Images/01/datapipeline.png)
+     ![03](./Images/01/new-data-pipeline.png)
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
    
@@ -94,11 +94,11 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
      ![09](./Images/01/09.png)
 
-1. On the **Copy summary** page, review the details of your copy operation and then select **Review + Run**.
+1. On the Review + Save page, review the details of your copy operation and then select **Save + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline1.png)
+     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline-01.png)
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
