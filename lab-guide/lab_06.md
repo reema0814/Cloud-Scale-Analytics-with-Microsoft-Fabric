@@ -77,7 +77,7 @@ Task 3:  Add a dataflow to a pipeline<br>
 5. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
 
  
-    ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
+    ![Query with a lakehouse destination.](./Images/publish.png)
 
 6. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
