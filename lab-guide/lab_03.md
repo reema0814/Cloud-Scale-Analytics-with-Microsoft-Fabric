@@ -28,7 +28,7 @@ Task 5 : Visualize data with Spark<br>
 
     After a minute or so, a new empty lakehouse will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply upload them to your lakehouse from the **LabVM**.
 
-3. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\Files\orders** to the lakehouse.
+3. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\Files\orders** to the lakehouse.
 
 4. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
@@ -75,7 +75,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
       ![Screenshot of a notebook with a Files pane.](./Images/notebook-files1.png)
 
-2. In the **...** menu for **2019.csv**, select **Load data** > **Spark**.
+2. In the **ellipse** menu for **2019.csv**, select **Load data** > **Spark**.
 
       ![](./Images/Pg7-LoadData-S2.png)
 
@@ -99,7 +99,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
     | 1 | SO43704 | 1 | 2019-07-01 | Julio Ruiz | julio1@adventure-works.com | Mountain-100 Black, 48 | 1 | 3374.99 | 269.9992 |
     | 2 | SO43705 | 1 | 2019-07-01 | Curtis Lu | curtis9@adventure-works.com | Mountain-100 Silver, 38 | 1 | 3399.99 | 271.9992 |
-    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+    | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse |
 
     The output shows the rows and columns of data from the 2019.csv file. However, note that the column headers don't look right. The default code used to load the data into a dataframe assumes that the CSV file includes the column names in the first row, but in this case the CSV file just includes the data with no header information.
 
@@ -118,7 +118,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     | 1 | SO43701 | 11 | 2019-07-01 | Christy Zhu | christy12@adventure-works.com | Mountain-100 Silver, 44 | 16 | 3399.99 | 271.9992 |
     | 2 | SO43704 | 1 | 2019-07-01 | Julio Ruiz | julio1@adventure-works.com | Mountain-100 Black, 48 | 1 | 3374.99 | 269.9992 |
     | 3 | SO43705 | 1 | 2019-07-01 | Curtis Lu | curtis9@adventure-works.com | Mountain-100 Silver, 38 | 1 | 3399.99 | 271.9992 |
-    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+    | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse |
 
     Now the dataframe correctly includes first row as data values, but the column names are auto-generated and not very helpful. To make sense of the data, you need to explicitly define the correct schema and data type for the data values in the file.
 
@@ -150,7 +150,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     | 1 | SO43701 | 11 | 2019-07-01 | Christy Zhu | christy12@adventure-works.com | Mountain-100 Silver, 44 | 16 | 3399.99 | 271.9992 |
     | 2 | SO43704 | 1 | 2019-07-01 | Julio Ruiz | julio1@adventure-works.com | Mountain-100 Black, 48 | 1 | 3374.99 | 269.9992 |
     | 3 | SO43705 | 1 | 2019-07-01 | Curtis Lu | curtis9@adventure-works.com | Mountain-100 Silver, 38 | 1 | 3399.99 | 271.9992 |
-    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+    | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse |
 
     Now the dataframe includes the correct column names (in addition to the **Index**, which is a built-in column in all dataframes based on the ordinal position of each row). The data types of the columns are specified using a standard set of types defined in the Spark SQL library, which were imported at the beginning of the cell.
 
@@ -202,7 +202,7 @@ The dataframe object includes a wide range of functions that you can use to filt
     - When you perform an operation on a dataframe, the result is a new dataframe (in this case, a new **customers** dataframe is created by selecting a specific subset of 
        columns from the **df** dataframe)
     - Dataframes provide functions such as **count** and **distinct** that can be used to summarize and filter the data they contain.
-    - The `dataframe['Field1', 'Field2', ...]` syntax is a shorthand way of defining a subset of columns. You can also use **select** method, so the first line of the code above could be written as `customers = df.select("CustomerName", "Email")`
+    - The `dataframe['Field1', 'Field2', ellipse]` syntax is a shorthand way of defining a subset of columns. You can also use **select** method, so the first line of the code above could be written as `customers = df.select("CustomerName", "Email")`
 
 1. Modify the code as follows:
 
@@ -278,7 +278,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
     > **Note**: Commonly, *Parquet* format is preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
+1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **ellipse** menu for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
 
     ![Screenshot of a folder containing parquet files.](./Images/saved-parquet1.png)
 
@@ -298,7 +298,7 @@ A common task for data engineers is to ingest data in a particular format or str
    print ("Transformed data saved!")
     ```
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
+1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **ellipse** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
     ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files1.png)
 
@@ -327,11 +327,11 @@ A common task for data engineers is to ingest data in a particular format or str
 
 1. Run the code cell and review the output, which describes the definition of the new table.
 
-1. In the **Explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
+1. In the **Explorer** pane, in the **ellipse** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view1.png)
 
-1. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**.
+1. In the **ellipse** menu for the **salesorders** table, select **Load data** > **Spark**.
 
     A new code cell containing code similar to the following example is added to the notebook:
 
