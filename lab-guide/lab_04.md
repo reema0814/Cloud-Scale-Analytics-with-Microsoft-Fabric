@@ -59,7 +59,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 5. Use the **&#9655;** (*Run cell*) button on the left of the cell to run it.
 
-    > **Note**: Since this is the first time you've run any Spark code in this notebook, a Spark session must be started. This means that the first run can take a minute or so to complete. Subsequent runs will be quicker.
+    > **Note**: Since this is the first time you've run any Spark code in this notebook, a Spark session must be started. This means that the first run can take a minute or so 
+      to complete. Subsequent runs will be quicker.
 
 6. When the cell command has completed, review the output below the cell, which should look similar to this:
 
@@ -74,7 +75,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 You can save the dataframe as a delta table by using the `saveAsTable` method. Delta Lake supports the creation of both *managed* and *external* tables.
 
-### Create a *managed* table
+### Create a **managed** table
 
 *Managed* tables are tables for which both the schema metadata and the data files are managed by Fabric. The data files for the table are created in the **Tables** folder.
 
@@ -86,7 +87,7 @@ You can save the dataframe as a delta table by using the `saveAsTable` method. D
 
 2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
 
-### Create an *external* table
+### Create an **external** table
 
 You can also create *external* tables for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
@@ -100,17 +101,17 @@ You can also create *external* tables for which the schema metadata is defined i
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
+    **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files**
 
 3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
+    **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products**
 
 4. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
 5. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
-### Compare *managed* and *external* tables
+  ### Compare managed and external tables
 
 Let's explore the differences between managed and external tables.
 
@@ -215,7 +216,8 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
 
 ## Task 5 : Use delta tables for streaming data
 
-Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
+  Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use 
+   a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
 
 1. Add a new code cell in the notebook. Then, in the new cell, add the following code and run it:
 
@@ -249,7 +251,8 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
    print("Source stream created...")
     ```
 
-    Ensure the message *Source stream createdellipse* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
+    Ensure the message *Source stream createdellipse* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, 
+    representing readings from hypothetical IoT devices.
 
 2. In a new code cell, add and run the following code:
 
