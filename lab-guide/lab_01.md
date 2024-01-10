@@ -106,22 +106,22 @@ Task 2.2 : Upload files <br>
 
 2. Under Upload choose **Upload files**.
    
-   ![03](./Images/ws/upload_files.png)
+    ![03](./Images/ws/upload_files.png)
    
 3. Browse the path **C:\LabFiles\Files** and select the file **sales.csv**. 
 
-   ![03](./Images/ws/sales.png)
+    ![03](./Images/ws/sales.png)
 
 4. Click on **Upload**
 
-   ![03](./Images/ws/upload.png)
+    ![03](./Images/ws/upload.png)
 
 5. In the menu bar on the left, select your lakehouse.
    
 
-6 On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+6. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
-   ![03](./Images/01/10.png)
+    ![03](./Images/01/10.png)
   
  ## Review
 
