@@ -263,13 +263,15 @@ After comparing machine learning models that you've trained across experiment ru
 
 1. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
-> **Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
+>   **Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
-8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
+8. Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-9. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
+9. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
 
-10. On the notebook menu, select **Stop session** to end the Spark session.
+10. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
+
+11. On the notebook menu, select **Stop session** to end the Spark session.
 
 ## Review
 
