@@ -98,7 +98,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
+     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline1.png)
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
