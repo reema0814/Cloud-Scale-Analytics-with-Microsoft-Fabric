@@ -160,24 +160,24 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 11. The dataframe includes only the data from the **2019.csv** file. Modify the code so that the file path uses a \* wildcard to read the sales order data from all of the files in the **orders** folder:
 
-   ```python
-   from pyspark.sql.types import *
-
-   orderSchema = StructType([
-     StructField("SalesOrderNumber", StringType()),
-     StructField("SalesOrderLineNumber", IntegerType()),
-     StructField("OrderDate", DateType()),
-     StructField("CustomerName", StringType()),
-     StructField("Email", StringType()),
-     StructField("Item", StringType()),
-     StructField("Quantity", IntegerType()),
-     StructField("UnitPrice", FloatType()),
-     StructField("Tax", FloatType())
-])
-
-  df = spark.read.format("csv").schema(orderSchema).load("Files/orders/*.csv")
-  display(df)
-  ```
+       ```python
+       from pyspark.sql.types import *
+    
+       orderSchema = StructType([
+         StructField("SalesOrderNumber", StringType()),
+         StructField("SalesOrderLineNumber", IntegerType()),
+         StructField("OrderDate", DateType()),
+         StructField("CustomerName", StringType()),
+         StructField("Email", StringType()),
+         StructField("Item", StringType()),
+         StructField("Quantity", IntegerType()),
+         StructField("UnitPrice", FloatType()),
+         StructField("Tax", FloatType())
+    ])
+    
+      df = spark.read.format("csv").schema(orderSchema).load("Files/orders/*.csv")
+      display(df)
+      ```
 
 12. Run the modified code cell and review the output, which should now include sales for 2019, 2020, and 2021.
 
@@ -300,7 +300,9 @@ A common task for data engineers is to ingest data in a particular format or str
 
     ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files1.png)
 
-    Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it easier to filter data.
+    Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it 
+    easier to filter data.
+   
 
 1. Add a new cell with the following code to load a new dataframe from the **orders.parquet** file:
 
