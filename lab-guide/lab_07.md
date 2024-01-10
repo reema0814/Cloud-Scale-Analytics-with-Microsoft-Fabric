@@ -91,7 +91,7 @@ A warehouse is a relational database in which you can define tables and other ob
     - **DimProduct**
     - **FactSalesOrder**
 
-     ![01](./Images/02/Pg4-T2-S9.png)  
+    ![01](./Images/02/Pg4-T2-S9.png)  
 
     > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
@@ -103,7 +103,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 2. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![Screenshot of the data warehouse model page.](./Images/model-dw.png)
+    ![Screenshot of the data warehouse model page.](./Images/model-dw1.png)
 
 3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
     - **Table 1**: FactSalesOrder
@@ -124,7 +124,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 5. When all of the relationships have been defined, the model should look like this:
 
-    ![Screenshot of the model with relationships.](./Images/dw-relationships.png)
+    ![Screenshot of the model with relationships.](./Images/dw-relationships1.png)
 
 ## Task 4 : Query data warehouse tables
 
@@ -225,7 +225,7 @@ You can easily visualize the data in either a single query, or in your data ware
 1. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
 1. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane.png)
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
 1. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
@@ -235,7 +235,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 1. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
-   ![Screenshot of the workspace with the three items listed.](./Images/workspace-items.png)
+   ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
 
 ## Review
 
