@@ -5,11 +5,11 @@
 In this lab, we will dive into the powerful capabilities of Apache Spark, specifically focusing on Delta Tables. Delta Tables provide advanced functionality for managing large-scale, versioned datasets, combining the benefits of data lakes and data warehouses. We will also leverage Delta Tables in Spark for efficient data storage, version control, and real-time streaming analytics
 
 ## Lab Objectives
-Task 1 : Upload data.<br>
-Task 2 : Explore data in a dataframe.<br>
-Task 3 : Create delta tables.<br>
-Task 4 : Explore table versioning.<br>
-Task 5 : Use delta tables for streaming data.<br>
+Task 1 : Upload data<br>
+Task 2 : Explore data in a dataframe<br>
+Task 3 : Create delta tables<br>
+Task 4 : Explore table versioning<br>
+Task 5 : Use delta tables for streaming data<br>
 
 ### Estimated timing: 45 minutes
 
@@ -19,21 +19,19 @@ Task 5 : Use delta tables for streaming data.<br>
 
 ## Task 1 : Upload data
 
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
+Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and choose the existing lakehouse for the data you're going to analyze.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
 ![](./Images/01/Pg3-T1-S1.png)
 
-2. In the **Synapse Data Engineering** home page, create a new **fabric_lakehouse**.
+2. In the **Synapse Data Engineering** home page, choose the Existing **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
-    After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
+3. Return to the web browser tab containing your lakehouse, and In the menu select **ellipse** icon for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
-4. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
-
-5. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
+4. In the menu select  **ellipse** icon for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from Path **C:\LabFiles\Files**
    
-6. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
+5. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
 ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
 
@@ -49,7 +47,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
-4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+4. In the menu select  **ellipse** icon for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -61,7 +59,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 5. Use the **&#9655;** (*Run cell*) button on the left of the cell to run it.
 
-    > **Note**: Since this is the first time you've run any Spark code in this notebook, a Spark session must be started. This means that the first run can take a minute or so to complete. Subsequent runs will be quicker.
+    > **Note**: Since this is the first time you've run any Spark code in this notebook, a Spark session must be started. This means that the first run can take a minute or so 
+      to complete. Subsequent runs will be quicker.
 
 6. When the cell command has completed, review the output below the cell, which should look similar to this:
 
@@ -76,7 +75,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 You can save the dataframe as a delta table by using the `saveAsTable` method. Delta Lake supports the creation of both *managed* and *external* tables.
 
-### Create a *managed* table
+### Create a **managed** table
 
 *Managed* tables are tables for which both the schema metadata and the data files are managed by Fabric. The data files for the table are created in the **Tables** folder.
 
@@ -86,9 +85,9 @@ You can save the dataframe as a delta table by using the `saveAsTable` method. D
    df.write.format("delta").saveAsTable("managed_products")
     ```
 
-2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
 
-### Create an *external* table
+### Create an **external** table
 
 You can also create *external* tables for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
@@ -98,21 +97,21 @@ You can also create *external* tables for which the schema metadata is defined i
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
 
-2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Files** folder, select **Copy ABFS path**.
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
+    **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files**
 
 3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
+    **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products**
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+4. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
-5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+5. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
-### Compare *managed* and *external* tables
+  ### Compare managed and external tables
 
 Let's explore the differences between managed and external tables.
 
@@ -147,7 +146,7 @@ Let's explore the differences between managed and external tables.
    DROP TABLE external_products;
     ```
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
+4. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
 5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
@@ -163,7 +162,7 @@ Let's explore the differences between managed and external tables.
    LOCATION 'Files/external_products';
     ```
 
-2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that it's schema matches the original dataframe that was saved in the **external_products** folder.
+2. In the **Lakehouse explorer** pane, In the menu select  **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that it's schema matches the original dataframe that was saved in the **external_products** folder.
 
 3. Add another code cell and run the following code:
 
@@ -217,7 +216,8 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
 
 ## Task 5 : Use delta tables for streaming data
 
-Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
+  Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use 
+   a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
 
 1. Add a new code cell in the notebook. Then, in the new cell, add the following code and run it:
 
@@ -251,7 +251,8 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
    print("Source stream created...")
     ```
 
-    Ensure the message *Source stream created...* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
+    Ensure the message *Source stream createdellipse* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, 
+    representing readings from hypothetical IoT devices.
 
 2. In a new code cell, add and run the following code:
 

@@ -6,11 +6,11 @@ In this lab, you will dive into the world of data analysis within a data warehou
 
 ## Lab Objectives
 
-Task 1:  Create a data warehouse.<br>
-Task 2 : Create tables and insert data.<br>
-Task 3 : Define a data model.<br>
-Task 4 : Query data warehouse tables.<br>
-Task 5 : Create a view and Visualize your data.<br>
+Task 1:  Create a data warehouse<br>
+Task 2 : Create tables and insert data<br>
+Task 3 : Define a data model<br>
+Task 4 : Query data warehouse tables<br>
+Task 5 : Create a view and Visualize your data<br>
 
 
 ### Estimated timing: 30 minutes
@@ -27,7 +27,7 @@ Now that you already have a workspace, it's time to switch to the *Data Warehous
 
     The Data Warehouse home page includes a shortcut to create a new warehouse:
 
-   ![01](./Images/01/warehouse.png)
+    ![01](./Images/01/warehouse.png)
 
 2. In the **Data Warehouse** home page, create a new **Warehouse**.
    
@@ -78,8 +78,11 @@ A warehouse is a relational database in which you can define tables and other ob
 
 7. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
-8. On the Home menu tab, use the New SQL Query button to create a new query for each table. Open the first text file, from **C:\LabFiles\Files\create-dw-01.txt**, and copy the Transact-SQL code related to the **'DimProduct'** table. Paste the 'DimProduct' table code into the query pane you created and execute the query. Repeat the steps for the **'DimCustomer'**, **'DimDate'** and **'FactSalesOrder'** tables using the respective files, **C:\LabFiles\Files\create-dw-02.txt** and **C:\LabFiles\Files\create-dw-03.txt**. Please ensure that each query is executed in its own query pane for each respective table.
-<!-- I had to remove the GO command in this query as well -->
+8. On the Home menu tab, use the New SQL Query button to create a new query for each table. Open the first text file, from C:\LabFiles\Files\create-dw-01.txt, and copy the 
+   Transact-SQL code related to the 'DimProduct' table. Paste the 'DimProduct' table code into the query pane you created and execute the query. Repeat the steps for the 
+  'DimCustomer', 'DimDate' and 'FactSalesOrder' tables using the respective files, C:\LabFiles\Files\create-dw-02.txt and C:\LabFiles\Files\create-dw-03.txt. Please ensure that 
+   each query is executed in its own query pane for each respective table. **Note:** remove the GO command in this query as well .
+
 
    ![01](./Images/02/Pg4-T2-S7.png)
 
@@ -91,7 +94,7 @@ A warehouse is a relational database in which you can define tables and other ob
     - **DimProduct**
     - **FactSalesOrder**
 
-     ![01](./Images/02/Pg4-T2-S9.png)  
+    ![01](./Images/02/Pg4-T2-S9.png)  
 
     > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
@@ -103,7 +106,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 2. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![Screenshot of the data warehouse model page.](./Images/model-dw.png)
+    ![Screenshot of the data warehouse model page.](./Images/model-dw1.png)
 
 3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
     - **Table 1**: FactSalesOrder
@@ -124,7 +127,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 5. When all of the relationships have been defined, the model should look like this:
 
-    ![Screenshot of the model with relationships.](./Images/dw-relationships.png)
+    ![Screenshot of the model with relationships.](./Images/dw-relationships1.png)
 
 ## Task 4 : Query data warehouse tables
 
@@ -144,7 +147,8 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ORDER BY CalendarYear, MonthOfYear;
     ```
 
-    > **Note**: that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
+    >**Note**: that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
+
 
 2. Modify the query as follows to add a second dimension to the aggregation.
 
@@ -195,47 +199,49 @@ You can easily visualize the data in either a single query, or in your data ware
    FROM vSalesByRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
-1. In the **Explorer** pane, select the **Model** view. 
+4. In the **Explorer** pane, select the **Model** view. 
 
-1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
-   1. FactSalesOrder
+5. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
+   6. FactSalesOrder
       - **SalesOrderDateKey**
       - **CustomerKey**
       - **ProductKey**
 
-     ![03](./Images/02/03.png)
+    ![03](./Images/02/03.png)
 
-   1. DimCustomer
+   7. DimCustomer
       - **CustomerKey**
       - **CustomerAltKey**
-   1. DimDate
+   8. DimDate
       - **DateKey**
       - **DateAltKey**
-   1. DimProduct
+   9. DimProduct
       - **ProductKey**
       - **ProductAltKey** 
 
-1. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
+10. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
 
-   ![03](./Images/02/Pg4-VisualizeData-S3.png)
+    ![03](./Images/02/Pg4-VisualizeData-S3.png)
 
-1. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
+11. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
 
-1. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
-1. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
-1. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
+12. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
+13. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
+14. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane.png)
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
-1. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
+15. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
    ![04](./Images/02/04.png)
 
-1. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
+16. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
 
-1. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
+17. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
-   ![Screenshot of the workspace with the three items listed.](./Images/workspace-items.png)
+   ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
+
+- Refer to [DataWarehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing) for more delated information
 
 ## Review
 

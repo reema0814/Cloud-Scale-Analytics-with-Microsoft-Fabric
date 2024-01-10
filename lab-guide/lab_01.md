@@ -6,13 +6,13 @@
 
 ## Lab Objectives
 
-Exercise 1 : Create a Fabric workspace.<br>
-Task 1.1: Assign Fabric Administrator Role.<br>
-Task 1.2: Create a workspace.<br>
+Exercise 1 : Create a Fabric workspace<br>
+Task 1.1: Assign Fabric Administrator Role<br>
+Task 1.2: Create a workspace<br>
 
-Excerise 2 : Create a Lakehouse and upload files.<br>
-Task 2.1 : Create a lakehouse.<br>
-Task 2.2 : Upload files .<br>
+Excerise 2 : Create a Lakehouse and upload files<br>
+Task 2.1 : Create a lakehouse <br>
+Task 2.2 : Upload files <br>
 
 
 ### Estimated timing: 60 minutes
@@ -49,9 +49,6 @@ Task 2.2 : Upload files .<br>
 
     ![check-and-navigate-back-to-home](./Images/ws/006.png)
 
-----
-
-
 #### Task 1.2: Create a workspace
 
 1. Copy the **Microsoft Fabric homepage link**, and open this link inside the VM in a new tab:
@@ -82,14 +79,16 @@ Task 2.2 : Upload files .<br>
 
     ![advanced-and-apply](./Images/ws/fabriccapacity.png)
 
-## Exercise 2 : Create a Lakehouse and upload files   
-## Task 2.1 : Create a lakehouse
+## Exercise 2 : Create a Lakehouse and upload files
+   
+#### Task 2.1 : Create a lakehouse
+
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
     ![02](./Images/01/Pg3-T1-S1.png)
    
-2. In the **Data engineering** home page, create a new **Lakehouse**.
+2. In the **Data engineering** home page, create a new **Lakehouse**
 
     - **Name:** Enter **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -116,14 +115,18 @@ Task 2.2 : Upload files .<br>
     ![03](./Images/ws/upload.png)
 
 5. In the menu bar on the left, select your lakehouse.
+   
 
-6 On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+6. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
-   ![10](./Images/01/10.png)
+    ![03](./Images/01/10.png)
   
-   ## Review
+  ## Review
 
-In this Lab, a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was created, the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse, establishing the foundation for subsequent data processing and analysis.
+   In this Lab, a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was 
+   successfully created, the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse, 
+   establishing the foundation for subsequent data processing and analysis.
+
 
 
   ## Proceed to next exercise

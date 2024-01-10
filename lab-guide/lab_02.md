@@ -1,4 +1,4 @@
-# Lab 02: Cloud-Scale-Analytics-with-Microsoft-Fabric
+# Lab 02: Ingest data with a Microsoft Fabric Lakehouse 
 
 ## Lab Overview
 
@@ -6,21 +6,18 @@ In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This l
 
 ## Lab Objectives
 
-Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse.<br>
-Task 1 : Create a notebook.<br>
-Task 2: Use SQL to query tables.<br>
-Task 3 : Create a visual query.<br>
-Task 4 : Create a report.<br>
+Task 1 : Create a notebook <br>
+Task 2: Use SQL to query tables<br>
+Task 3 : Create a visual query<br>
+Task 4 : Create a report<br>
   
 ### Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
-  ![Navigate-To-AAD](./Images/ws/lab_02.png)
+   ![Navigate-To-AAD](./Images/ws/lab_02.png)
 
-## Exercise 1 :Ingest data with a Microsoft Fabric Lakehouse 
-
-#### Task 1 : Create a notebook
+## Task 1 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -36,9 +33,9 @@ Task 4 : Create a report.<br>
 
    ![11](./Images/01/Pg3-Notebook-S2.png) 
 
-3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+3. In the menu select **ellipse** icon for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
-   ![12](./Images/01/12.png)
+   ![12](./Images/toggle.png)
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
@@ -64,37 +61,25 @@ Task 4 : Create a report.<br>
    df.write.format("delta").mode("append").saveAsTable(table_name)
     ```
 
-    This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, adds and derives columns, filters and reorders columns, and saves the transformed data as a **managed table** - appending the data if the table already exists.
+   This code loads the data from the sales.csv file applies some transformation logic, and saves the transformed data as a 
+   **managed table** - appending the data if the table already exists.
+
 
 5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
+    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
-6. (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
+6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-    ```python
-    df.write.format("delta").saveAsTable("external_sales", path="<abfs_path>/external_sales")
-
-    #In the Lakehouse explorer pane, in the ... menu for the Files folder, select Copy ABFS path.
-
-    #The ABFS path is the fully qualified path to the Files folder in the OneLake storage for your lakehouse - similar to this:
-
-    #abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files
-    ```
-    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
-
-
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
-
-8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
+7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
    ![.](./Images/01/Pg3-Notebook-S10.png)
  
-9. In the hub menu bar on the left, select your lakehouse.
+8. In the hub menu bar on the left, select your lakehouse.
 
-10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
 
 ## Task 2: Use SQL to query tables
@@ -103,7 +88,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
-    ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint.png)
+   ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint1.png)
 
 2. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
@@ -116,7 +101,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 3. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
-    ![Screenshot of a SQL query with results.](./Images/sql-query.png)
+    ![Screenshot of a SQL query with results.](./Images/sql-query1.png)
 
 ## Task 3 : Create a visual query
 
@@ -126,11 +111,11 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 2. Drag the **sales** table to the new visual query editor pane that opens to create a Power Query as shown here: 
 
-    ![Screenshot of a Visual query.](./Images/visual-query.png)
+    ![Screenshot of a Visual query.](./Images/visual-query1.png)
 
 3. In the **Manage columns** menu, select **Choose columns**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns.
 
-    ![Screenshot of a Choose columns dialog box.](./Images/choose-columns.png)
+    ![Screenshot of a Choose columns dialog box.](./Images/choose-columns1.png)
 
 4. Click on **+ (1)** ,in the **Transform table** menu, select **Group by (2)**.
 
@@ -147,7 +132,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 6. When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-    ![Screenshot of a Visual query with results.](./Images/visual-query-results.png)
+    ![Screenshot of a Visual query with results.](./Images/visual-query-results1.png)
 
 ## Task 4 : Create a report
 
@@ -155,13 +140,13 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 1. At the bottom of the SQL Endpoint page, select the **Model** tab. The data model schema for the dataset is shown.
 
-    ![Screenshot of a data model.](./Images/data-model.png)
+    ![Screenshot of a data model.](./Images/data-model1.png)
 
     > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. A new browser tab opens in which you can design your report.
 
-    ![Screenshot of the report designer.](./Images/report-designer.png)
+    ![Screenshot of the report designer.](./Images/report-designer1.png)
 
 3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
     - **Item**
@@ -169,11 +154,11 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
     A table visualization is added to the report:
 
-    ![Screenshot of a report containing a table.](./Images/table-visualization.png)
+    ![Screenshot of a report containing a table.](./Images/table-visualization1.png)
 
 4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it as shown here.
 
-    ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart.png)
+    ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart11.png)
 
 5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
 6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:

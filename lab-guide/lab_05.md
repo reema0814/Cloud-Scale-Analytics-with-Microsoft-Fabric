@@ -1,4 +1,4 @@
-# Lab 05: Cloud-Scale-Analytics-with-Microsoft-Fabric
+# Lab 05: Seamless Cloud Analytics: Empowering with Data Pipelines
 
 ## Lab Overview
 
@@ -6,9 +6,9 @@ In this lab, you will immerse yourself in the world of cloud-scale analytics, le
 
 ## Lab Objectives
 
-Task 1 : Create a pipeline.<br>
-Task 2 : Create a notebook.<br>
-Task 3 : Modify and Monitor the pipeline.<br>
+Task 1 : Create a pipeline<br>
+Task 2 : Create a notebook<br>
+Task 3 : Modify and Monitor the pipeline<br>
 
   
 ### Estimated timing: 40 minutes
@@ -46,7 +46,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 1. Select **Next** and then select **Create new connection** and enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
-    - **Connection name**: *Specify a unique name*
+    - **Connection name**: **github**
     - **Authentication kind**: Basic (*Leave the username and password blank*)
   
      ![04](./Images/01/04.png)
@@ -75,7 +75,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
      ![07](./Images/01/07.png)
 
-     ![07](./Images/01/connectdest02.png)
+     ![07](./Images/fabric2.png)
 
 1. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
@@ -98,7 +98,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
+     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline1.png)
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
@@ -110,7 +110,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
      ![10](./Images/01/10.png)
 
-#### Task 2 : Create a notebook
+ ## Task 2 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -126,9 +126,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
    ![11](./Images/01/Pg3-Notebook-S2.png) 
 
-3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+3. In the menu select **ellipse** icon for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
-     ![12](./Images/01/12.png)
+     ![12](./Images/toggle.png)
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
@@ -158,35 +158,22 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
+     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
-6. (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
-    ```python
-    df.write.format("delta").saveAsTable("external_sales", path="<abfs_path>/external_sales")
+6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-    #In the Lakehouse explorer pane, in the ... menu for the Files folder, select Copy ABFS path.
-
-    #The ABFS path is the fully qualified path to the Files folder in the OneLake storage for your lakehouse - similar to this:
-
-    #abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files
-    ```
-    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
-
-
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
-
-8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
+7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
     ![.](./Images/01/Pg3-Notebook-S10.png)
  
-9. In the hub menu bar on the left, select your lakehouse.
+8. In the hub menu bar on the left, select your lakehouse.
 
-10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-#### Task 3 :  Modify and Monitor the pipeline
+  ## Task 3 :  Modify and Monitor the pipeline
 
 1. To monitor your data pipeline runs, hover over your pipeline in your workspace. Doing so will bring up three dots to the right of your pipeline name.
 
