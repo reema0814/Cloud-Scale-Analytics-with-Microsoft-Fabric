@@ -64,6 +64,7 @@ Task 4 : Create a report<br>
    This code loads the data from the sales.csv file applies some transformation logic, and saves the transformed data as a 
    **managed table** - appending the data if the table already exists.
 
+
 5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)

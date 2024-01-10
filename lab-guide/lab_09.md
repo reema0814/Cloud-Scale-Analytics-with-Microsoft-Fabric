@@ -118,7 +118,10 @@ Now that you've loaded the data, you can use it to train a machine learning mode
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
     ```
 
+> **Note**: This code uses scikit-learn's `train_test_split` to divide data (`X`, features, and `y`, target) into training and testing sets (70-30 split). 
+
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
+
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
     
     ```python
@@ -263,7 +266,7 @@ After comparing machine learning models that you've trained across experiment ru
 
 7. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
->   **Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
+   > **Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
 8. Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 

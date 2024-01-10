@@ -5,11 +5,10 @@
 In this lab, you will explore the exciting realm of real-time analytics using Microsoft Fabric. This lab is designed to introduce you to the powerful Kusto Query Language (KQL) and guide you through the process of creating a KQL database, querying data, and creating compelling Power BI reports.
 
 ## Lab Objectives
- Task 1 : Create a KQL database.<br>
- Task 2 : Use KQL to query the sales table.<br>
- Task 3 : Create a Power BI report from a KQL Queryset.<br>
+ Task 1 : Create a KQL database<br>
+ Task 2 : Use KQL to query the sales table<br>
+ Task 3 : Create a Power BI report from a KQL Queryset
  
-  
 ### Estimated timing: 30 minutes
 
 ## Architecture Diagram 
@@ -104,7 +103,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 2. Select **Build Power BI report** and wait for the report editor to open.
 
-3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalnetRevenue** fields.
 
 4. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
 
@@ -119,8 +118,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 7. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
 ## Review
-
-In this exercise, In summary, these tasks led to the creation of a KQL database , the utilization of KQL to query the sales table , and the successful generation of a Power BI report from a KQL Queryset . The specific implementations and details varied based on the nature of the dataset and the analytical requirements.
+In summary, these tasks led to the creation of a KQL database , the utilization of KQL to query the sales table , and the successful generation of a Power BI report from a KQL Queryset . The specific implementations and details varied based on the nature of the dataset and the analytical requirements.
 
 
 ## Proceed to next exercise

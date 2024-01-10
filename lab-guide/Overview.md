@@ -8,16 +8,16 @@ Microsoft Fabric is an exciting addition to Microsoft’s suite of data analytic
 
 ### Key features of Microsoft Fabric
 
-Data Engineering - Data Engineering experience provides a world class Spark platform with great authoring experiences, enabling data engineers to perform large scale data transformation and democratize data through the lakehouse. Microsoft Fabric Spark's integration with Data Factory enables notebooks and spark jobs to be scheduled and orchestrated. 
+**Data Engineering** - Data Engineering experience provides a world class Spark platform with great authoring experiences, enabling data engineers to perform large scale data transformation and democratize data through the lakehouse. Microsoft Fabric Spark's integration with Data Factory enables notebooks and spark jobs to be scheduled and orchestrated. 
 
-Data Factory - Azure Data Factory combines the simplicity of Power Query with the scale and power of Azure Data Factory. You can use more than 200 native connectors to connect to data sources on-premises and in the cloud. For more information, see What is Data Factory in Microsoft Fabric?
+**Data Factory** - Azure Data Factory combines the simplicity of Power Query with the scale and power of Azure Data Factory. You can use more than 200 native connectors to connect to data sources on-premises and in the cloud. For more information, see What is Data Factory in Microsoft Fabric?
 
-Data Science - Data Science experience enables you to build, deploy, and operationalize machine learning models seamlessly within your Fabric experience. It integrates with Azure Machine Learning to provide built-in experiment tracking and model registry. Data scientists are empowered to enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. This way it shifts from descriptive to predictive insights.
+**Data Science** - Data Science experience enables you to build, deploy, and operationalize machine learning models seamlessly within your Fabric experience. It integrates with Azure Machine Learning to provide built-in experiment tracking and model registry. Data scientists are empowered to enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. This way it shifts from descriptive to predictive insights.
 
-Data Warehouse - Data Warehouse experience provides industry leading SQL performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
+**Data Warehouse** - Data Warehouse experience provides industry leading SQL performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
 Real-Time Analytics - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. Real-Time Analytics is best in class engine for observational data analytics.
 
-Power BI - Power BI is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data.
+**Power BI** - Power BI is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data.
 
 ## Sandbox Scenario
 
@@ -30,20 +30,20 @@ Using this environment, you'll be able to explore complete features and offering
 
 ### Pre-provisioned resources
 
-#### **Virtual Machines**: 
+#### Virtual Machines: 
 
-- 1 *Windows Server 2022 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
+- 1 *Windows Server 2022 Datacenter* Virtual machines. As part of the automation, resources linked to virtual machines, including virtual networks, network security groups, managed disks, network interface cards, and IP addresses, are deployed.
 
   These virtual machines are tailored and configured to the sandbox's specifications. Files, applications, packages, and OS configurations are all pre-configured. It is 
   recommended that you use the same virtual machine throughout the lab for the best experience.
 
-#### **License and subscription**: 
+#### License and subscription: 
 
 - You'll have access to a pre-configured Microsoft user account with an active Azure subscription and a tenant. 
    
   User account has assigned as Owner at subscription and Global administrator at the tenant level. You need to use the same user account throughout the lab to get the most out of the lab. 
 
-#### **Azure Credits**: 
+#### Azure Credits: 
 
 - You have been given a quota of **$180** which includes the running cost of pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
@@ -53,16 +53,16 @@ Using this environment, you'll be able to explore complete features and offering
 
   ![Picture 1](./media/o1.jpg)
 
-#### **Duration and Deletion of sandbox**:  
+#### Duration and Deletion of sandbox:  
 
 - The sandbox environment will be active for **14 days/336** hours from the time of registration. 
-- The allowed uptime of the virtual machine is **40 hours**.
+- The maximum allowed virtual machine uptime is only **40 hours**. It is recommended to deallocate the virtual machine when not in use.
 - The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the 
   virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will 
   shutdown automatically. This feature is enabled in virtual machines to optimize Azure costs.
-- when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
+- When 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
-#### **Best practices**: 
+#### Best practices: 
 
 - **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
@@ -71,9 +71,11 @@ Using this environment, you'll be able to explore complete features and offering
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 
-## Lab guide Content:
+## Lab guide Content
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
+
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Fabric feature. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
 
 - Lab 01 - Getting Started with Microsoft Fabric
 - Lab 02 - Cloud-Scale-Analytics-with-Microsoft-Fabric
@@ -85,7 +87,7 @@ You will have access to a lab guide which is a reference material to assist you 
 - Lab 08 - Get started with Real-Time Analytics in Microsoft Fabric
 - Lab 09 - Use notebooks to train a model in Microsoft Fabric
 
-### Azure services and related products
+### Azure services and related products:
 
 - Microsoft Entra ID
 

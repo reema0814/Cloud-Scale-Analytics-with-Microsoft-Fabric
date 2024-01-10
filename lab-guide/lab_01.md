@@ -51,18 +51,16 @@ Task 2.2 : Upload files <br>
 
 #### Task 1.2: Create a workspace
 
-1. Copy the **microsoft fabric homepage link**, and open this link inside the VM in a new tab:
+1. Copy the **Microsoft Fabric homepage link**, and open this link inside the VM in a new tab:
 
    ```
    https://app.fabric.microsoft.com/
    ```
 
-
 2. Select **Power BI**.
 
     ![Account-manager-start](./Images/ws/microsoftpage.png)
    
-
 
 3.  Now, select **Workspaces** and click on **+ New workspace**:
 
@@ -83,8 +81,8 @@ Task 2.2 : Upload files <br>
 
 ## Exercise 2 : Create a Lakehouse and upload files
    
-
 #### Task 2.1 : Create a lakehouse
+
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
@@ -128,6 +126,7 @@ Task 2.2 : Upload files <br>
    In this Lab, a Fabric workspace was created, starting with the assignment of the Fabric Administrator Role for administrative privileges. Subsequently, a workspace was 
    successfully created, the process continued with the creation of a Lakehouse to serve as a centralized data repository. Files were then uploaded into the Lakehouse, 
    establishing the foundation for subsequent data processing and analysis.
+
 
 
   ## Proceed to next exercise
