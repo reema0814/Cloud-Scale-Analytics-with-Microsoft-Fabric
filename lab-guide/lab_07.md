@@ -205,7 +205,7 @@ You can easily visualize the data in either a single query, or in your data ware
       - **CustomerKey**
       - **ProductKey**
 
-     ![03](./Images/02/03.png)
+    ![03](./Images/02/03.png)
 
    7. DimCustomer
       - **CustomerKey**
@@ -219,7 +219,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 10. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
 
-   ![03](./Images/02/Pg4-VisualizeData-S3.png)
+    ![03](./Images/02/Pg4-VisualizeData-S3.png)
 
 11. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
 
