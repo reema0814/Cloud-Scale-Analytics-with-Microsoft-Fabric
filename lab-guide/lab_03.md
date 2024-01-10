@@ -22,11 +22,7 @@ Task 5 : Visualize data with Spark<br>
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
-2. In the **Synapse Data Engineering** home page, create a new **Lakehouse**.
-
-   - **Name:** Enter **fabric_lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
-
-    After a minute or so, a new empty lakehouse will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply upload them to your lakehouse from the **LabVM**.
+2. In the **Synapse Data Engineering** home page, choose the Existing **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>**.
 
 3. Return to the web browser tab containing your lakehouse, and in the **ellipse** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\Files\orders** to the lakehouse.
 
