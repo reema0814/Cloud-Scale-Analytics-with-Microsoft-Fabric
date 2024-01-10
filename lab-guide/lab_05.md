@@ -29,7 +29,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. On the **Home** page for your lakehouse, select **New Data pipeline**.
 
-     ![03](./Images/01/new-data-pipeline.png)
+     ![03](./Images/new-data-pipeline.png)
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline**. 
    
