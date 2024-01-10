@@ -177,7 +177,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
   display(df)
   ```
 
-11. Run the modified code cell and review the output, which should now include sales for 2019, 2020, and 2021.
+12. Run the modified code cell and review the output, which should now include sales for 2019, 2020, and 2021.
 
     **Note**: Only a subset of the rows is displayed, so you may not be able to see examples from all years.
 
