@@ -158,7 +158,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
+     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
