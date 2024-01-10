@@ -239,6 +239,8 @@ You can easily visualize the data in either a single query, or in your data ware
 
    ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
 
+- Refer to [DataWarehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing) for more delated information
+
 ## Review
 
 In this exercise, the completion of these tasks involved the establishment of a data warehouse that served as a centralized repository for structured data. Tables were created, and data was inserted into the warehouse , forming the basis for subsequent analyses. A data model was defined  to represent relationships between entities. Data warehouse tables were queried, extracting specific insights. Finally, a view was created, and data was visualized, providing a customized perspective and enhancing interpretability. The specific implementations and details were tailored to the characteristics of the dataset and the analytical requirements.
