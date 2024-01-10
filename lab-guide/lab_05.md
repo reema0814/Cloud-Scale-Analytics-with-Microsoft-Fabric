@@ -110,7 +110,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
      ![10](./Images/01/10.png)
 
-#### Task 2 : Create a notebook
+ ## Task 2 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -163,17 +163,17 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
 
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
+6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
+7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
 
     ![.](./Images/01/Pg3-Notebook-S10.png)
  
-9. In the hub menu bar on the left, select your lakehouse.
+8. In the hub menu bar on the left, select your lakehouse.
 
-10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-#### Task 3 :  Modify and Monitor the pipeline
+  ## Task 3 :  Modify and Monitor the pipeline
 
 1. To monitor your data pipeline runs, hover over your pipeline in your workspace. Doing so will bring up three dots to the right of your pipeline name.
 
