@@ -23,11 +23,13 @@ Task 3:  Add a dataflow to a pipeline<br>
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
+    ![New dataflow.](./Images/dw1.png)
+
    >**Note**: Ensure that the data warehouse is selected from the bottom left-hand corner.
   
     ![New dataflow.](./Images/new-dataflow1.png)
 
-2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
+1. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
  - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
  - **Connection**: Create new connection
