@@ -211,7 +211,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     The output should resemble the following image:
 
-    ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
+    ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics1.png)
 
 ## Task 5 : Explore your experiments
 
