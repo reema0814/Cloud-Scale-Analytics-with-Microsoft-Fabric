@@ -6,11 +6,11 @@ In this lab, we will use notebooks to train a model in Microsoft Fabric! You wil
 
 ## Lab Objectives
 
-Task 1 : Create a notebook.<br>
-Task 2 : Load data into a dataframe.<br>
-Task 3 : Train a machine learning model.<br>
-Task 4 : Use MLflow to search and view your experiments.<br>
-Task 5 : Explore your experiments.<br>
+Task 1 : Create a notebook<br>
+Task 2 : Load data into a dataframe<br>
+Task 3 : Train a machine learning model<br>
+Task 4 : Use MLflow to search and view your experiments<br>
+Task 5 : Explore your experiments<br>
 
   
 ### Estimated timing: 45 minutes
@@ -87,11 +87,11 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
     
    > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
 
-1. Use the **&#9655; Run cell** button on the left of the cell to run it.
+7. Use the **&#9655; Run cell** button on the left of the cell to run it.
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
-1. When the cell command has completed, review the output below the cell, which should look similar to this:
+8. When the cell command has completed, review the output below the cell, which should look similar to this:
 
     |Index|CustomerID|years_with_company|total_day_calls|total_eve_calls|total_night_calls|total_intl_calls|average_call_minutes|total_customer_service_calls|age|churn|
     | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -263,15 +263,13 @@ After comparing machine learning models that you've trained across experiment ru
 
 1. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
-Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
+>**Note** that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
+8. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
 
-1. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
+9. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
 
-1. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
-
-1. On the notebook menu, select **Stop session** to end the Spark session.
+10. On the notebook menu, select **Stop session** to end the Spark session.
 
 ## Review
 
