@@ -44,7 +44,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
     ![](./Images/Pg7-Notebook-S1.png)
 
-    After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+    > After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
    
 
 3. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
@@ -256,18 +256,18 @@ A common task for data engineers is to ingest data in a particular format or str
    display(transformed_df.limit(5))
     ```
 
-1. Run the code to create a new dataframe from the original order data with the following transformations:
+2. Run the code to create a new dataframe from the original order data with the following transformations:
     - Add **Year** and **Month** columns based on the **OrderDate** column.
     - Add **FirstName** and **LastName** columns based on the **CustomerName** column.
     - Filter and reorder the columns, removing the **CustomerName** column.
 
-1. Review the output and verify that the transformations have been made to the data.
+3. Review the output and verify that the transformations have been made to the data.
 
     You can use the full power of the Spark SQL library to transform the data by filtering rows, deriving, removing, renaming columns, and applying any other required data modifications.
 
     > **Tip**: See the [Spark dataframe documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html) to learn more about the methods of the Dataframe object.
 
-1. Add a new cell with the following code to save the transformed dataframe in Parquet format (Overwriting the data if it already exists):
+4. Add a new cell with the following code to save the transformed dataframe in Parquet format (Overwriting the data if it already exists):
 
     ```python
    transformed_df.write.mode("overwrite").parquet('Files/transformed_data/orders')
@@ -276,84 +276,84 @@ A common task for data engineers is to ingest data in a particular format or str
 
     > **Note**: Commonly, *Parquet* format is preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
+5. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and select the **transformed_orders** folder to verify that it contains a new folder named **orders**, which in turn contains one or more Parquet files.
 
-    ![Screenshot of a folder containing parquet files.](./Images/saved-parquet1.png)
+   ![Screenshot of a folder containing parquet files.](./Images/saved-parquet1.png)
 
-1. Add a new cell with the following code to load a new dataframe from the parquet files in the **transformed_orders/orders** folder:
+6. Add a new cell with the following code to load a new dataframe from the parquet files in the **transformed_orders/orders** folder:
 
     ```python
    orders_df = spark.read.format("parquet").load("Files/transformed_data/orders")
    display(orders_df)
     ```
 
-1. Run the cell and verify that the results show the order data that has been loaded from the parquet files.
+7. Run the cell and verify that the results show the order data that has been loaded from the parquet files.
 
-1. Add a new cell with the following code; which saves the dataframe, partitioning the data by **Year** and **Month**:
+8. Add a new cell with the following code; which saves the dataframe, partitioning the data by **Year** and **Month**:
 
     ```python
    orders_df.write.partitionBy("Year","Month").mode("overwrite").parquet("Files/partitioned_data")
    print ("Transformed data saved!")
     ```
 
-1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
+9. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, In the menu select **ellipse** icon for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
     ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files1.png)
 
-    Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it 
+    > Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it 
     easier to filter data.
    
 
-1. Add a new cell with the following code to load a new dataframe from the **orders.parquet** file:
+10. Add a new cell with the following code to load a new dataframe from the **orders.parquet** file:
 
-    ```python
-   orders_2021_df = spark.read.format("parquet").load("Files/partitioned_data/Year=2021/Month=*")
-   display(orders_2021_df)
-    ```
+     ```python
+    orders_2021_df = spark.read.format("parquet").load("Files/partitioned_data/Year=2021/Month=*")
+    display(orders_2021_df)
+     ```
 
-1. Run the cell and verify that the results show the order data for sales in 2021. Note that the partitioning columns specified in the path (**Year** and **Month**) are not included in the dataframe.
+11. Run the cell and verify that the results show the order data for sales in 2021. Note that the partitioning columns specified in the path (**Year** and **Month**) are not included in the dataframe.
 
-1. Add a new code cell to the notebook, and enter the following code, which saves the dataframe of sales order data as a table named **salesorders**:
+12. Add a new code cell to the notebook, and enter the following code, which saves the dataframe of sales order data as a table named **salesorders**:
 
-    ```Python
-   # Create a new table
-   df.write.format("delta").saveAsTable("salesorders")
+     ```Python
+    # Create a new table
+    df.write.format("delta").saveAsTable("salesorders")
 
-   # Get the table description
-   spark.sql("DESCRIBE EXTENDED salesorders").show(truncate=False)
-    ```
+    # Get the table description
+    spark.sql("DESCRIBE EXTENDED salesorders").show(truncate=False)
+     ```
 
     > **Note**: It's worth noting a couple of things about this example. Firstly, no explicit path is provided, so the files for the table will be managed by the metastore. Secondly, the table is saved in **delta** format. You can create tables based on multiple file formats (including CSV, Parquet, Avro, and others) but *delta lake* is a Spark technology that adds relational database capabilities to tables; including support for transactions, row versioning, and other useful features. Creating tables in delta format is preferred for data lakehouses in Fabric.
 
-1. Run the code cell and review the output, which describes the definition of the new table.
+13. Run the code cell and review the output, which describes the definition of the new table.
 
-1. In the **Explorer** pane, In the menu select **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
+14. In the **Explorer** pane, In the menu select **ellipse** icon for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view1.png)
 
-1. In the menu select **ellipse** icon for the **salesorders** table, select **Load data** > **Spark**.
+15. In the menu select **ellipse** icon for the **salesorders** table, select **Load data** > **Spark**.
 
     A new code cell containing code similar to the following example is added to the notebook:
 
-    ```Python
-   df = spark.sql("SELECT * FROM [your_lakehouse].salesorders LIMIT 1000")
-   display(df)
-    ```
+     ```Python
+    df = spark.sql("SELECT * FROM [your_lakehouse].salesorders LIMIT 1000")
+    display(df)
+     ```
 
-1. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
+16. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
-1. Add a new code cell to the notebook, and enter the following code in it:
+17. Add a new code cell to the notebook, and enter the following code in it:
 
-    ```sql
-   %%sql
-   SELECT YEAR(OrderDate) AS OrderYear,
-          SUM((UnitPrice * Quantity) + Tax) AS GrossRevenue
-   FROM salesorders
-   GROUP BY YEAR(OrderDate)
-   ORDER BY OrderYear;
-    ```
+     ```sql
+    %%sql
+    SELECT YEAR(OrderDate) AS OrderYear,
+           SUM((UnitPrice * Quantity) + Tax) AS GrossRevenue
+    FROM salesorders
+    GROUP BY YEAR(OrderDate)
+    ORDER BY OrderYear;
+     ```
 
-1. Run the cell and review the results. Observe that:
+18. Run the cell and review the results. Observe that:
     - The `%%sql` line at the beginning of the cell (called a *magic*) indicates that the Spark SQL language runtime should be used to run the code in this cell instead of PySpark.
     - The SQL code references the **salesorders** table that you created previously.
     - The output from the SQL query is automatically displayed as the result under the cell.
@@ -385,7 +385,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 5. Verify that the chart looks similar to this:
 
-   ![Screenshot of a bar chart of products by total order quantiies](./Images/chart.png)
+    ![Screenshot of a bar chart of products by total order quantiies](./Images/chart.png)
 
 ## Review
 

@@ -36,17 +36,17 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    ![](./Images/Pg6-S2.1.png)
 
 
-1. At the bottom left of the Power BI portal, switch to the **Data science** experience.
+4. At the bottom left of the Power BI portal, switch to the **Data science** experience.
 
-1. In the **Data science** home page, create a new **Notebook**.
+5. In the **Data science** home page, create a new **Notebook**.
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-1. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
+6. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
     When the cell changes to a markdown cell, the text it contains is rendered.
 
-1. Use the **&#128393;** (Edit) button to switch the cell to editing mode, then delete the content and enter the following text:
+7. Use the **&#128393;** (Edit) button to switch the cell to editing mode, then delete the content and enter the following text:
 
     ```text
    # Train a machine learning model and track with MLflow
@@ -85,7 +85,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
     display(df)
     ```
     
-   > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
+    > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
 
 7. Use the **&#9655; Run cell** button on the left of the cell to run it.
 
@@ -118,7 +118,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
     ```
 
-> **Note**: This code uses scikit-learn's `train_test_split` to divide data (`X`, features, and `y`, target) into training and testing sets (70-30 split). 
+   > **Note**: This code uses scikit-learn's `train_test_split` to divide data (`X`, features, and `y`, target) into training and testing sets (70-30 split). 
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
 
