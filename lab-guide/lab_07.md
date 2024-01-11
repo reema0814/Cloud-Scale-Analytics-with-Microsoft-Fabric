@@ -1,6 +1,7 @@
 # Lab 07: Analyze data in a data warehouse
 
 ## Lab Overview
+In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
 
 In this lab, you will dive into the world of data analysis within a data warehouse using Power BI. The lab is structured into tasks that will guide you through the process of creating a data warehouse, defining a data model, querying tables, and visualizing your data. Each task contributes to building a strong foundation for efficient data analysis.
 
