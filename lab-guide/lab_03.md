@@ -1,8 +1,11 @@
-# Lab 03: Analyze data with Apache Spark SDP -Fabric
+# Lab 03: Analyze data with Apache Spark
 
 ## Lab Overview
 
+Apache Spark is an open-source engine for distributed data processing and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
+
 The primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
+
 
 ## Lab Objectives
 Task 1 : Create a notebook<br>
@@ -389,6 +392,6 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 ## Review
 
-In this exercise, data analysis was conducted with Apache Spark SDP -Fabric. The process began with the creation of a notebook to serve as the analytical environment. Data was loaded into a DataFrame for further processing. Exploration of the DataFrame provided insights into the dataset's characteristics. Spark was then employed to transform data files, enhancing their structure and content. Finally, data visualization with Spark facilitated a comprehensive understanding of patterns and trends within the dataset.
+In this exercise, data analysis was conducted with Apache Spark. The process began with the creation of a notebook to serve as the analytical environment. Data was loaded into a DataFrame for further processing. Exploration of the DataFrame provided insights into the dataset's characteristics. Spark was then employed to transform data files, enhancing their structure and content. Finally, data visualization with Spark facilitated a comprehensive understanding of patterns and trends within the dataset.
 
 ## Proceed to next exercise
