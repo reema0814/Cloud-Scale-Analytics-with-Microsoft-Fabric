@@ -8,6 +8,8 @@ Microsoft Fabric is an exciting addition to Microsoft’s suite of data analytic
 
 ### Key features of Microsoft Fabric
 
+**Power BI** - Power BI is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data.
+
 **Data Engineering** - Data Engineering experience provides a world class Spark platform with great authoring experiences, enabling data engineers to perform large scale data transformation and democratize data through the lakehouse. Microsoft Fabric Spark's integration with Data Factory enables notebooks and spark jobs to be scheduled and orchestrated. 
 
 **Data Factory** - Azure Data Factory combines the simplicity of Power Query with the scale and power of Azure Data Factory. You can use more than 200 native connectors to connect to data sources on-premises and in the cloud. For more information, see What is Data Factory in Microsoft Fabric?
@@ -16,8 +18,6 @@ Microsoft Fabric is an exciting addition to Microsoft’s suite of data analytic
 
 **Data Warehouse** - Data Warehouse experience provides industry leading SQL performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
 Real-Time Analytics - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. Real-Time Analytics is best in class engine for observational data analytics.
-
-**Power BI** - Power BI is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data.
 
 ## Sandbox Scenario
 
@@ -78,10 +78,10 @@ You will have access to a lab guide which is a reference material to assist you 
 Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Fabric feature. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
 
 - Lab 01 - Getting Started with Microsoft Fabric
-- Lab 02 - Cloud-Scale-Analytics-with-Microsoft-Fabric
-- Lab 03 - Cloud-Scale-Analytics-with-Microsoft-Fabric
+- Lab 02 - Ingest data with a Microsoft Fabric Lakehouse
+- Lab 03 - Analyze data with Apache Spark
 - Lab 04 - Use Delta tables in Apache Spark
-- Lab 05 - Cloud-Scale-Analytics-with-Microsoft-Fabric
+- Lab 05 - Seamless Cloud Analytics: Empowering with Data Pipelines
 - Lab 06 - Create a Dataflow (Gen2) in Microsoft Fabric
 - Lab 07 - Analyze data in a data warehouse
 - Lab 08 - Get started with Real-Time Analytics in Microsoft Fabric
