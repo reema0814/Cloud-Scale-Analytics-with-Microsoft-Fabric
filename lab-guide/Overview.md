@@ -14,8 +14,8 @@ Microsoft Fabric is an exciting addition to Microsoft’s suite of data analytic
 
 **Data Science** - Data Science experience enables you to build, deploy, and operationalize machine learning models seamlessly within your Fabric experience. It integrates with Azure Machine Learning to provide built-in experiment tracking and model registry. Data scientists are empowered to enrich organizational data with predictions and allow business analysts to integrate those predictions into their BI reports. This way it shifts from descriptive to predictive insights.
 
-**Data Warehouse** - Data Warehouse experience provides industry leading SQL performance and scale. It fully separates compute from storage, enabling independent scaling of both the components. Additionally, it natively stores data in the open Delta Lake format. 
-Real-Time Analytics - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. Real-Time Analytics is best in class engine for observational data analytics.
+**Data Warehouse** - Data Warehouse experience provides industry-leading SQL performance and scale. It fully separates compute from storage, enabling independent scaling of both components. Additionally, it natively stores data in the open Delta Lake format. 
+Real-Time Analytics - Observational data, which is collected from various sources such as apps, IoT devices, human interactions, and so many more. It's currently the fastest-growing data category. This data is often semi-structured in formats like JSON or Text. It comes in at high volume, with shifting schemas. These characteristics make it hard for traditional data warehousing platforms to work with. Real-Time Analytics is in class engine for observational data analytics.
 
 **Power BI** - Power BI is the world's leading Business Intelligence platform. It ensures that business owners can access all the data in Fabric quickly and intuitively to make better decisions with data.
 
@@ -26,16 +26,15 @@ Contoso Corporation, a large enterprise operating in diverse industries, recogni
 
 ## About the Sandbox
 
-Using this environment, you'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
+Using this environment, you'll be able to explore complete features and offerings offered by Microsoft Fabric. Please find the detailed overview of the sandbox environment below.
 
 ### Pre-provisioned resources
 
 #### Virtual Machine: 
 
-- 1 *Windows Server 2022 Datacenter* Virtual machines. As part of the automation, resources linked to virtual machines, including virtual networks, network security groups, managed disks, network interface cards, and IP addresses, are deployed.
+- 1 *Windows Server 2022 Datacenter* Virtual machines. As part of the sandbox environment setup, resources linked to virtual machines, including virtual networks, network security groups, managed disks, network interface cards, and IP addresses, are deployed.
 
-  These virtual machines are tailored and configured to the sandbox's specifications. Files, applications, packages, and OS configurations are all pre-configured. It is 
-  recommended that you use the same virtual machine throughout the lab for the best experience.
+  These virtual machines are tailored and configured to the sandbox's specifications. Files, applications, packages, and OS configurations are all pre-configured. It is recommended that you use the same virtual machine throughout the lab for the best experience.
 
 #### License and subscription: 
 
@@ -73,7 +72,7 @@ Using this environment, you'll be able to explore complete features and offering
 
 ## Lab guide Content
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
+You will have access to an integrated lab guide which is a reference material to assist you in getting started with the exploration.
 
 Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Fabric feature. You are also encouraged to explore additional features of Microsoft Fabric based on your interests and preferences.
 
@@ -90,5 +89,7 @@ Based on your interests, you can use this lab guide as a reference to learn and 
 ### Azure services and related products:
 
 - Microsoft Entra ID
+- Microsoft Fabric Capacity
+- PowerBI
 
 
