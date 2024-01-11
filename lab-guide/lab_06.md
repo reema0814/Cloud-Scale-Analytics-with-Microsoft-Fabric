@@ -2,6 +2,8 @@
 
 ## Lab Overview
 
+In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
+
 In this lab, we will delve into the realm of data transformation and ingestion using Microsoft Fabric! In this practical session, you will navigate the process of creating a Dataflow (Gen2), a powerful tool for orchestrating extract, transform, and load (ETL) processes seamlessly.
 
 ## Lab Objectives
