@@ -1,16 +1,16 @@
 # Getting Started with Cloud scale analytics with Microsoft fabric
 
-1. ## Accessing Your Lab Environment
+  ## Accessing Your Lab Environment
  
    Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
    ![07](./Images/gettting_started.png)
 
-    ### Virtual Machine & Lab Guide
+  ### Virtual Machine & Lab Guide
  
    Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-   ## Exploring Your Lab Resources
+  ## Exploring Your Lab Resources
  
    To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
@@ -22,15 +22,15 @@
 
    ## Managing Your Virtual Machine
  
-     Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+   Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-3. You can start, stop, and restart virtual machines from the **Resources** tab.
+   You can start, stop, and restart virtual machines from the **Resources** tab.
 
    ![08](./Images/rescources.png)
  
-    > You will see the DeploymentID value on **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+  > You will see the DeploymentID value on **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
-1. Ensure the timely deallocation of virtual machines from the **Resources tab**. When they are not actively in use, aiming to minimize costs.
+   Ensure the timely deallocation of virtual machines from the **Resources tab**. When they are not actively in use, aiming to minimize costs.
 
    ![06](./Images/rescources1.png)
 
