@@ -1,27 +1,59 @@
-# Getting Started with Lab
+# Getting Started with Cloud scale analytics with Microsoft fabric
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of lab guide to switch to different exercises of the lab guide.
+1. ## Accessing Your Lab Environment
+ 
+   Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![07](./Images/gettingstarted1.png)
+   ![07](./Images/gettting_started.png)
 
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide on separate and full window by selecting the **Split Window** from the lower right corner. 
+    ### Virtual Machine & Lab Guide
+ 
+   Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+   ## Exploring Your Lab Resources
+ 
+   To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-2. You can start, stop, and restart virtual machines from the **Resources** tab.
+   ![08](./Images/env_1.png)
 
-   ![08](./Images/resources.png)
+   ## Utilizing the Split Window Feature
+ 
+   For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
+
+   ## Managing Your Virtual Machine
+ 
+     Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+3. You can start, stop, and restart virtual machines from the **Resources** tab.
+
+   ![08](./Images/rescources.png)
  
     > You will see the DeploymentID value on **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 1. Ensure the timely deallocation of virtual machines from the **Resources tab**. When they are not actively in use, aiming to minimize costs.
 
-   ![06](./Images/running2.png)
+   ![06](./Images/rescources1.png)
+
+   ## **Lab Duration Extension**
+
+1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
+
+   ![08](./Images/duration.png)
+
+    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+
+2. Click **OK** to extend your lab duration.
+ 
+     ![08](./Images/extend_01.png)
+
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
 
 
 ## Login to Azure Portal
 
 1. In the JumpVM, click on Azure portal shortcut of Microsoft Edge browser which is created on desktop.
 
-   ![09](./Images/gs/09.png)
+   ![09](./Images/azure_login1.png)
    
 1. On **Sign into Microsoft Azure** tab you will see login screen, in that enter following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
