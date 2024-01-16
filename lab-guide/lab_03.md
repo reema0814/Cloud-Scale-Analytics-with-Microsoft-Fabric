@@ -1,4 +1,4 @@
-# Lab 03: Analyze data with Apache Spark SDP -Fabric
+# Lab 03: Analyze data with Apache Spark 
 
 ## Lab Overview
 
