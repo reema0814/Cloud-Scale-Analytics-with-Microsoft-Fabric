@@ -69,7 +69,8 @@ Using this environment, you'll be able to explore complete features and offering
 -  To temporarily suspend the fabric resource, Navigate to the **Azure Portal**.
 -  Search for **Microsoft Fabric**.
 -  Choose existing **Fabric** .
--  In the **Overview** page promptly click on the **Pause** option, as shown in the screenshot below
+-  In the **Overview** page promptly click on the **Pause** option, as shown in the screenshot below.
+>  **Note**: Pausing the resource might take few minutes.
 
    ![Picture 2](./media/fabric_pause.png)
 
