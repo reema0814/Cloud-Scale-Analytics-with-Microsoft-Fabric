@@ -2,7 +2,7 @@
 
 ## Lab Overview
 
-The primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
+In this lab ,the primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
 
 ## Lab Objectives
 Task 1 : Create a notebook<br>
