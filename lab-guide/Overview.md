@@ -64,6 +64,15 @@ Using this environment, you'll be able to explore complete features and offering
 
 #### Best practices: 
 
+-  **Microsoft Fabric**: Please Pause the Fabric resource when not in use to minimize the Azure spend.
+-  **Steps to Pause the fabric resource** :
+-  To temporarily suspend the fabric resource, Navigate to the **Azure Portal**.
+-  Search for **Microsoft Fabric**.
+-  Choose existing **Fabric** .
+-  In the **Overview** page promptly click on the **Pause** option, as shown in the screenshot below
+
+   ![Picture 2](./media/fabric_pause.png)
+
 - **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
 - **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spending so that the environment 
