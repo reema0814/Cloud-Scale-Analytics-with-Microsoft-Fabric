@@ -122,7 +122,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
       ![11](./Images/existing_notebook.png)
 
-3. Select the existing cell in the notebook, which contains some simple code, and then rerun the code with the following as shown in the screenshot below:
+3. Select the existing cell in the notebook, which contains some simple code, and then **Rerun** these two codes with the following as shown in the screenshot below:
    
       ![.](./Images/outputs.png)
 
