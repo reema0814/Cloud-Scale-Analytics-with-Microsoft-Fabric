@@ -86,11 +86,13 @@ Task 4 : Create a report<br>
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
-1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
+1. Switch Back to the **Home** page and select your **Lakehouse**. 
+
+2. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
    ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint01.png)
 
-2. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
+3. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
     ```sql
    SELECT Item, SUM(Quantity * UnitPrice) AS Revenue
@@ -99,7 +101,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
    ORDER BY Revenue DESC;
     ```
 
-3. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
+4. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
     ![Screenshot of a SQL query with results.](./Images/sql-query1.png)
 

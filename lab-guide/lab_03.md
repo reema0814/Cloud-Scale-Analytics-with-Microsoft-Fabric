@@ -1,11 +1,8 @@
-# Lab 03: Analyze data with Apache Spark
+# Lab 03: Analyze data with Apache Spark 
 
 ## Lab Overview
 
-Apache Spark is an open-source engine for distributed data processing and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
-
-The primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
-
+In this lab ,the primary objective of the lab is to analyze data using Apache Spark within the Microsoft Fabric environment. The tasks include creating a notebook, loading data into a Spark DataFrame, exploring the data, transforming it, and visualizing insights.
 
 ## Lab Objectives
 Task 1 : Create a notebook<br>
@@ -100,7 +97,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
     | 1 | SO43704 | 1 | 2019-07-01 | Julio Ruiz | julio1@adventure-works.com | Mountain-100 Black, 48 | 1 | 3374.99 | 269.9992 |
     | 2 | SO43705 | 1 | 2019-07-01 | Curtis Lu | curtis9@adventure-works.com | Mountain-100 Silver, 38 | 1 | 3399.99 | 271.9992 |
-    | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse |
+    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
     The output shows the rows and columns of data from the 2019.csv file. However, note that the column headers don't look right. The default code used to load the data into a dataframe assumes that the CSV file includes the column names in the first row, but in this case the CSV file just includes the data with no header information.
 
@@ -119,7 +116,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
     | 1 | SO43701 | 11 | 2019-07-01 | Christy Zhu | christy12@adventure-works.com | Mountain-100 Silver, 44 | 16 | 3399.99 | 271.9992 |
     | 2 | SO43704 | 1 | 2019-07-01 | Julio Ruiz | julio1@adventure-works.com | Mountain-100 Black, 48 | 1 | 3374.99 | 269.9992 |
     | 3 | SO43705 | 1 | 2019-07-01 | Curtis Lu | curtis9@adventure-works.com | Mountain-100 Silver, 38 | 1 | 3399.99 | 271.9992 |
-    | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse | ellipse |
+    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
     Now the dataframe correctly includes first row as data values, but the column names are auto-generated and not very helpful. To make sense of the data, you need to explicitly define the correct schema and data type for the data values in the file.
 

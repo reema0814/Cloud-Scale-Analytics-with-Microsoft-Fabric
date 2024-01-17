@@ -9,7 +9,7 @@ In this lab, you will immerse yourself in the world of cloud-scale analytics, le
 ## Lab Objectives
 
 Task 1 : Create a pipeline<br>
-Task 2 : Create a notebook<br>
+Task 2 : Load a notebook<br>
 Task 3 : Modify and Monitor the pipeline<br>
 
   
@@ -112,68 +112,25 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
      ![10](./Images/01/10.png)
 
- ## Task 2 : Create a notebook
+ ## Task 2 : Load a notebook
 
-1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
+1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **Existing notebook**.
 
-      ![11](./Images/01/11.png)
+      ![11](./Images/notebook_1.png)
 
-    After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+    After a few seconds, a exisitng notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-2. Select the existing cell in the notebook, which contains some simple code, and then replace the default code with the following variable declaration.
+2. Choose **load sales Notebook** from the list .
 
-    ```python
-   table_name = "sales"
-    ```
+      ![11](./Images/existing_notebook.png)
 
-   ![11](./Images/01/Pg3-Notebook-S2.png) 
-
-3. In the menu select **ellipse** icon for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
-
-     ![12](./Images/toggle.png)
-
-4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
-
-   >**Note:** Wait until the previous code completes execution
+3. Select the existing cell in the notebook, which contains some simple code, and then **Rerun** these two codes with the following as shown in the screenshot below:
    
-    ```python
-   from pyspark.sql.functions import *
+      ![.](./Images/outputs.png)
 
-   # Read the new sales data
-   df = spark.read.format("csv").option("header","true").option("inferSchema","true").load("Files/new_data/*.csv")
+4. In the hub menu bar on the left, select your lakehouse.
 
-   ## Add month and year columns
-   df = df.withColumn("Year", year(col("OrderDate"))).withColumn("Month", month(col("OrderDate")))
-
-   # Derive FirstName and LastName columns
-   df = df.withColumn("FirstName", split(col("CustomerName"), " ").getItem(0)).withColumn("LastName", split(col("CustomerName"), " ").getItem(1))
-
-   # Filter and reorder columns
-   df = df["SalesOrderNumber", "SalesOrderLineNumber", "OrderDate", "Year", "Month", "FirstName", "LastName", "EmailAddress", "Item", "Quantity", "UnitPrice", "TaxAmount"]
-
-   # Load the data into a managed table
-   #Managed tables are tables for which both the schema metadata and the data files are managed by Fabric. The data files for the table are created in the Tables folder.
-   df.write.format("delta").mode("append").saveAsTable(table_name)
-    ```
-
-    This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
-
-5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
-
-     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
-
-    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
-
-
-6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, In the menu select **ellipse** icon for **Tables** select **Refresh** and verify that a **sales** table has been created.
-
-7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook** and close the settings pane.
-
-    ![.](./Images/01/Pg3-Notebook-S10.png)
- 
-8. In the hub menu bar on the left, select your lakehouse.
-
-9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+5. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
   ## Task 3 :  Modify and Monitor the pipeline
 
