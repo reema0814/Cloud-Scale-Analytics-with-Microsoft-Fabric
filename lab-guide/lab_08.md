@@ -1,6 +1,7 @@
 # Lab 08: Get started with Real-Time Analytics in Microsoft Fabric
 
 ## Lab Overview
+Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such as real-time data from log files or IoT devices.
 
 In this lab, you will explore the exciting realm of real-time analytics using Microsoft Fabric. This lab is designed to introduce you to the powerful Kusto Query Language (KQL) and guide you through the process of creating a KQL database, querying data, and creating compelling Power BI reports.
 
@@ -109,7 +110,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
     ![Screenshot of a report from a KQL query.](./Images/kql-report1.png)
 
-5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
+5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item** (**.pbix** format) in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
 
 6. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
 

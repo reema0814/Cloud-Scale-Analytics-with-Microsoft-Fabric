@@ -2,13 +2,15 @@
 
 ## Lab Overview
 
+In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
+
 In this lab, we will delve into the realm of data transformation and ingestion using Microsoft Fabric! In this practical session, you will navigate the process of creating a Dataflow (Gen2), a powerful tool for orchestrating extract, transform, and load (ETL) processes seamlessly.
 
 ## Lab Objectives
 
-Task 1:  Create a Dataflow (Gen2) to ingest data<br>
+Task 1 :  Create a Dataflow (Gen2) to ingest data<br>
 Task 2 : Add data destination for Dataflow<br>
-Task 3:  Add a dataflow to a pipeline<br>
+Task 3 :  Add a dataflow to a pipeline<br>
 
   
 ### Estimated timing: 30 minutes
@@ -21,20 +23,24 @@ Task 3:  Add a dataflow to a pipeline<br>
 
  Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
-1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
-
-    ![New dataflow.](./Images/dw1.png)
+1. In the home page of your workspace (1), click on **+New**(2) and then select **More options**(3).
 
    >**Note**: Ensure that the data warehouse is selected from the bottom left-hand corner.
-  
-    ![New dataflow.](./Images/new-dataflow1.png)
 
-1. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
- - **Link to file**: *Selected*
- - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
- - **Connection**: Create new connection
- - **data gateway**: (none)
- - **Authentication kind**: Anonymous
+   ![More-Options](./Images/more-options.png)
+
+1. Search for Data Factory and then select **Dataflow Gen2**.
+
+   ![Dataflow-Gen2](./Images/dataflow-gen2.png)
+
+1. After a few seconds, the Power Query editor for your new dataflow opens as shown here. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
+   - **Link to file**: *Selected*
+   - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
+   - **Connection**: Create new connection
+   - **data gateway**: (none)
+   - **Authentication kind**: Anonymous
+
+   ![New dataflow.](./Images/new-dataflow1.png)
 
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
@@ -49,9 +55,9 @@ Task 3:  Add a dataflow to a pipeline<br>
      **The step to add the custom column is added to the query and the resulting column is displayed in the data pane**
 
 
-> **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
->
-> Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
+   > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
+   >
+   > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
 ## Task 2 : Add data destination for Dataflow
 
@@ -59,9 +65,9 @@ Task 3:  Add a dataflow to a pipeline<br>
 
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse.
+2. In the **Connect to data destination** dialog box, verify that you're signed and then click on **Next**.
 
-    ![Data destination configuration page.](./Images/dataflow-connection1.png)
+   ![Data destination configuration page.](./Images/dataflow-connectiion-signin.png)
 
 3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
@@ -114,9 +120,9 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
     ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
-> **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.<br>
+   > **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow<br>
   You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.<br>
-    ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+   ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Review
 In this execrise, the completion of these tasks involved the creation of a Dataflow (Gen2) to efficiently ingest data. A designated data destination was added to the Dataflow, ensuring organized storage for the ingested data. Additionally, a seamless integration was achieved by adding the Dataflow to a pipeline, allowing for coordinated data processing. The tasks collectively contributed to establishing an efficient and organized data ingestion and processing workflow.

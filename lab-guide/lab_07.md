@@ -1,12 +1,13 @@
 # Lab 07: Analyze data in a data warehouse
 
 ## Lab Overview
+In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
 
 In this lab, you will dive into the world of data analysis within a data warehouse using Power BI. The lab is structured into tasks that will guide you through the process of creating a data warehouse, defining a data model, querying tables, and visualizing your data. Each task contributes to building a strong foundation for efficient data analysis.
 
 ## Lab Objectives
 
-Task 1:  Create a data warehouse<br>
+Task 1 :  Create a data warehouse<br>
 Task 2 : Create tables and insert data<br>
 Task 3 : Define a data model<br>
 Task 4 : Query data warehouse tables<br>
@@ -202,46 +203,49 @@ You can easily visualize the data in either a single query, or in your data ware
 4. In the **Explorer** pane, select the **Model** view. 
 
 5. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
-   6. FactSalesOrder
+   
+   1. FactSalesOrder
       - **SalesOrderDateKey**
       - **CustomerKey**
       - **ProductKey**
 
     ![03](./Images/02/03.png)
 
-   7. DimCustomer
+   2. DimCustomer
       - **CustomerKey**
       - **CustomerAltKey**
-   8. DimDate
+   3. DimDate
       - **DateKey**
       - **DateAltKey**
-   9. DimProduct
+   4. DimProduct
       - **ProductKey**
       - **ProductAltKey** 
 
-10. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
+6. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
 
-    ![03](./Images/02/Pg4-VisualizeData-S3.png)
+   ![03](./Images/02/Pg4-VisualizeData-S3.png)
 
-11. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
+7. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
 
-12. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
-13. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
-14. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
+8. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
+9. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
 
-15. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
+10. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
-   ![04](./Images/02/04.png)
+    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
-16. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
+11. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
-17. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
+    ![04](./Images/02/04.png)
 
-   ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
+12. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
 
-- Refer to [DataWarehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing) for more delated information
+13. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
+
+    ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
+
+    - Refer to [DataWarehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing) for more delated information
 
 ## Review
 

@@ -7,8 +7,8 @@
 ## Lab Objectives
 
 Exercise 1 : Create a Fabric workspace<br>
-Task 1.1: Assign Fabric Administrator Role<br>
-Task 1.2: Create a workspace<br>
+Task 1.1 : Assign Fabric Administrator Role<br>
+Task 1.2 : Create a workspace<br>
 
 Excerise 2 : Create a Lakehouse and upload files<br>
 Task 2.1 : Create a lakehouse <br>
@@ -28,6 +28,7 @@ Task 2.2 : Upload files <br>
 1. Start by searching for **Microsoft Entra ID** in the search pane in Azure portal:
 
     ![Navigate-To-AAD](./Images/ws/entra01.png)
+
 
 2. Navigate to **Roles and administrators**:
 
@@ -56,28 +57,52 @@ Task 2.2 : Upload files <br>
    ```
    https://app.fabric.microsoft.com/
    ```
+2. On the Microsoft Fabric page, enter your **Email**(1) and click on **SUBMIT**(2). This will check if you need to create a new account.
 
-2. Select **Power BI**.
+    ![](./Images/fabric-submit.png)
+
+3. Now let’s get started by signing into Microsoft Fabric. Click on **Sign In**.
+
+   ![](./Images/fabric-sign-in.png)
+
+4. Once you’ve clicked on Sign in, a new window will appear asking you to enter your **Password** and then click on **Sign In**.
+
+   ![](./Images/fabric-sign-in-pass.png)
+
+5. On the Stay Signed In window, click on **YES**.
+
+   ![](./Images/fabric-stay-sign-in.png)
+
+6. In the Create Your Account section, enter the required fields **(1)** & **(2)** and click on **GET STARTED**(3). 
+
+   ![](./Images/fabric-get-started.png)
+
+7. You have now successfully created your Microsoft Fabric account. Click on **GET STARTED**.
+
+   ![](./Images/fabric-get-started-01.png)
+
+8. Select **Power BI**.
 
     ![Account-manager-start](./Images/ws/microsoftpage.png)
-   
 
-3.  Now, select **Workspaces** and click on **+ New workspace**:
+9.  Now, select **Workspaces** and click on **+ New workspace**:
 
      ![New Workspace](./Images/ws/workspace.png)
 
-4. Fill out the **Create a workspace** form with the following details:
+10. Fill out the **Create a workspace** form with the following details:
 
-   - **Name:** Enter **fabric-<inject key="DeploymentID" enableCopy="false"/>**.
+    - **Name:** Enter **fabric-<inject key="DeploymentID" enableCopy="false"/>**.
    
 
     ![name-and-desc-of-workspc](./Images/ws/workspacename.png)
 
-   - **Advanced:** Expand it and Under **License mode**, select **Fabric capacity(1)**.
+    - **Advanced:** Expand it and Under **License mode**, select **Fabric capacity(1)**.
 
-5. Select on existing **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
+11. Select on existing **Capacity(2)** then click on **Apply(3)** to create and open the workspace.
 
     ![advanced-and-apply](./Images/ws/fabriccapacity.png)
+
+**IMPORTANT**: Make sure that you perform the entire lab in the **fabric-<inject key="DeploymentID" enableCopy="false"/>** workspace
 
 ## Exercise 2 : Create a Lakehouse and upload files
    
@@ -96,7 +121,7 @@ Task 2.2 : Upload files <br>
 
     After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-### Task 2.2: Upload files 
+#### Task 2.2: Upload files 
 
  1. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
 
