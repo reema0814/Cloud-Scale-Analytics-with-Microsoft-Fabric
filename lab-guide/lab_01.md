@@ -67,11 +67,11 @@ Task 2.2 : Upload files <br>
 
 4. Once you’ve clicked on Sign in, a new window will appear asking you to enter your **Password** and then click on **Sign In**.
 
-   ![](./Images/fabric-sign-in-pass.png)
+   ![](./Images/fabric-sign-in-pass1.png)
 
 5. On the Stay Signed In window, click on **YES**.
 
-   ![](./Images/fabric-stay-sign-in.png)
+   ![](./Images/fabric-stay-sign-in1.png)
 
 6. In the Create Your Account section, enter the required fields **(1)** & **(2)** and click on **GET STARTED**(3). 
 
@@ -79,7 +79,7 @@ Task 2.2 : Upload files <br>
 
 7. You have now successfully created your Microsoft Fabric account. Click on **GET STARTED**.
 
-   ![](./Images/fabric-get-started-01.png)
+   ![](./Images/fabric-get-started-01-1.png)
 
 8. Select **Power BI**.
 
