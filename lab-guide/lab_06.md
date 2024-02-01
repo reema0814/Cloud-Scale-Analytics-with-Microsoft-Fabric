@@ -67,7 +67,7 @@ Task 3 :  Add a dataflow to a pipeline<br>
 
 2. In the **Connect to data destination** dialog box, verify that you're signed and then click on **Next**.
 
-   ![Data destination configuration page.](./Images/dataflow-connectiion-signin.png)
+   ![Data destination configuration page.](./Images/lakehuse_31-1.png)
 
 3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
